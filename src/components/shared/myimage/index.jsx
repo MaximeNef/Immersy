@@ -1,26 +1,25 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 const myLoader = ({ src, width, quality }) => {
-  console.log(src, "src");
-  return `${src}`;
-};
+  console.log(src, 'src')
+  return `${src}`
+}
 
 const MyImage = ({
-  source,
+  src,
   h,
   w,
   className,
   objectFit,
   layout,
-  imageProps,
   sizes,
   priority,
 }) => {
   return (
     <Image
       loader={myLoader}
-      src={source}
-      alt='Picture of the author'
+      src={src}
+      alt="Picture of the author"
       width={w}
       height={h}
       unoptimized={true}
@@ -28,11 +27,11 @@ const MyImage = ({
       objectFit={objectFit}
       layout={layout}
       priority={priority ? true : false}
-      placeholder='blur'
-      blurDataURL='/images/path-to-blur-image.jpg'
+      placeholder="blur"
+      blurDataURL="/images/path-to-blur-image.jpg"
       sizes={sizes}
       quality={100}
     />
-  );
-};
-export default MyImage;
+  )
+}
+export default MyImage
