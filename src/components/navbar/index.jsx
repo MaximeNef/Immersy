@@ -1,19 +1,13 @@
-import { use, useState } from 'react'
-import Flex from '../shared/flex'
-import MyImage from '../shared/myimage'
-import Burger from './burger'
+import Container from '../shared/container'
+import Header from './header'
 
-const Navbar = () => {
-  const [pause, setPause] = useState(true)
-  const [play, setPlay] = useState(false)
+const Navbar = ({ children }) => {
   return (
-    <div>
-      <Flex>
-        <MyImage src={'/assets/immersyicon.svg'} w={300} h={300} />
-        <Burger pause={pause} play={play} />
-      </Flex>
-    </div>
+    <Container>
+      <Header />
+      {children}
+      {/* <Footer current={current} /> */}
+    </Container>
   )
 }
-
 export default Navbar
