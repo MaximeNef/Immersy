@@ -1,7 +1,6 @@
 import Lottie from 'lottie-web'
-import Container from '../../container'
-import burgerMenu from '../../../../../public/lotties/burgermenu.json'
-import { useState } from 'react'
+import Container from '../../shared/container'
+import burgerMenu from '../../../../public/lotties/burgermenu.json'
 
 const Burger = (props) => {
   const defaultOptions = {
@@ -19,8 +18,8 @@ const Burger = (props) => {
         options={defaultOptions}
         height={48}
         width={43}
-        isPaused={props.pause}
-        IsPlaying={props.play}
+        // isPaused={pause}
+        // IsPlaying={play}
       />
     </Container>
   )
