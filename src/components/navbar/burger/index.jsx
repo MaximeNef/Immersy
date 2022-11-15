@@ -14,15 +14,13 @@ const Burger = (props) => {
     },
   }
   return (
-    <Container>
-      <Lottie
-        options={defaultOptions}
-        height={48}
-        width={43}
-        isPaused={props.pause}
-        IsPlaying={props.play}
-      />
-    </Container>
+    <Lottie
+      options={defaultOptions}
+      height={48}
+      width={43}
+      isPaused={props.pause}
+      IsPlaying={props.play}
+    />
   )
 }
 export default Burger
