@@ -32,8 +32,8 @@ const Header = (props) => {
   return (
     <>
       <Container className="z-40">
-        <Flex content="between" className="">
-          <MyImage src={'/assets/immersyicon.svg'} w={60} h={60} />
+        <Flex content="between" className=" mt-5 ml-[40px]">
+          <MyImage src={'/assets/immersyicon.svg'} w={55} h={55} />
           <Burger pause={pause} onClick={handleClick} />
         </Flex>
       </Container>
@@ -42,7 +42,7 @@ const Header = (props) => {
         initial={false}
         variants={variants}
         animate={isOpen ? 'open' : 'closed'}
-        className="min-h-full fixed w-full bg-blue-300"
+        className="min-h-full fixed w-full "
         transition={{
           duration: 0.5,
         }}
