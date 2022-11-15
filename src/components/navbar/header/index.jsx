@@ -15,7 +15,7 @@ const Header = (props) => {
       setIsOpen((isOpen) => !isOpen)
       setTimeout(() => {
         setPause((pause) => !pause)
-      }, 500)
+      }, 520)
       setPause((pause) => !pause)
     }
   }
