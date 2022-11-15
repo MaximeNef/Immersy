@@ -8,17 +8,15 @@ import Popup from '../popup'
 
 const Header = (props) => {
   const [pause, setPause] = useState(true)
-  const [play, setPlay] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
 
   function handleClick() {
     if (pause) {
-      setIsOpen((previsOpen) => !previsOpen)
+      setIsOpen((isOpen) => !isOpen)
       setTimeout(() => {
-        setPause((prevPause) => !prevPause)
+        setPause((pause) => !pause)
       }, 500)
-      setPause((prevPause) => !prevPause)
-    } else {
+      setPause((pause) => !pause)
     }
   }
 
@@ -36,7 +34,7 @@ const Header = (props) => {
       <Container className="z-40">
         <Flex content="between" className="">
           <MyImage src={'/assets/immersyicon.svg'} w={60} h={60} />
-          <Burger pause={pause} play={play} onClick={handleClick} />
+          <Burger pause={pause} onClick={handleClick} />
         </Flex>
       </Container>
 

@@ -4,7 +4,7 @@ import burgerMenu from '../../../../public/lotties/burgermenu.json'
 const Burger = (props) => {
   const defaultOptions = {
     name: 'menuBurger',
-    loop: false,
+    loop: true,
     autoplay: false,
     animationData: burgerMenu,
     rendererSettings: {
@@ -18,7 +18,6 @@ const Burger = (props) => {
         height={48}
         width={43}
         isPaused={props.pause}
-        isPlaying={props.play}
       />
     </div>
   )
