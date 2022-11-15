@@ -10,10 +10,11 @@ const Header = (props) => {
   const [pause, setPause] = useState(true)
   const [play, setPlay] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
+  console.log('header: ' + isOpen)
 
   const handleClick = () => {
     setIsOpen((isOpen) => !isOpen)
-    console.log(isOpen)
+    console.log('isClicked: ' + isOpen)
   }
 
   const variants = {
@@ -21,7 +22,7 @@ const Header = (props) => {
       left: 0,
     },
     closed: {
-      left: 100,
+      left: '-100vw',
     },
   }
 
@@ -34,21 +35,19 @@ const Header = (props) => {
         </Flex>
       </Container>
 
-      {isOpen == true ? (
-        <motion.div
-          initial={false}
-          variants={variants}
-          animate={isOpen ? 'open' : 'closed'}
-          className="min-h-full fixed w-full bg-blue-300"
-          transition={{
-            duration: 0.5,
-            times: [0, 0.1, 0.3, 0],
-            // ease: [0.57, 0.97, 0.73, 0.57],
-          }}
-        >
-          <Popup links={props.links} />
-        </motion.div>
-      ) : null}
+      <motion.div
+        initial={false}
+        variants={variants}
+        animate={isOpen ? 'open' : 'closed'}
+        className="min-h-full fixed w-full bg-blue-300"
+        transition={{
+          duration: 0.5,
+          times: [0, 0.1, 0.3, 0],
+          // ease: [0.57, 0.97, 0.73, 0.57],
+        }}
+      >
+        <Popup links={props.links} />
+      </motion.div>
     </>
   )
 }
