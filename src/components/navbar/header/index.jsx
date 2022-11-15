@@ -10,11 +10,16 @@ const Header = (props) => {
   const [pause, setPause] = useState(true)
   const [play, setPlay] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
-  console.log('header: ' + isOpen)
 
-  const handleClick = () => {
-    setIsOpen((isOpen) => !isOpen)
-    console.log('isClicked: ' + isOpen)
+  function handleClick() {
+    if (pause) {
+      setIsOpen((previsOpen) => !previsOpen)
+      setTimeout(() => {
+        setPause((prevPause) => !prevPause)
+      }, 500)
+      setPause((prevPause) => !prevPause)
+    } else {
+    }
   }
 
   const variants = {
@@ -42,8 +47,6 @@ const Header = (props) => {
         className="min-h-full fixed w-full bg-blue-300"
         transition={{
           duration: 0.5,
-          times: [0, 0.1, 0.3, 0],
-          // ease: [0.57, 0.97, 0.73, 0.57],
         }}
       >
         <Popup links={props.links} />
