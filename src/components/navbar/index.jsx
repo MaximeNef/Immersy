@@ -5,6 +5,9 @@ import Header from './header'
 const Navbar = ({ children }) => {
   const [links, setLinks] = useState([
     {
+      page: 'Accueil',
+    },
+    {
       page: 'Nos services',
     },
     {

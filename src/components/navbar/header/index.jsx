@@ -31,9 +31,11 @@ const Header = (props) => {
 
   return (
     <>
-      <Container className="z-40">
-        <Flex content="between" className=" mt-5 ml-[40px]">
-          <MyImage src={'/assets/immersyicon.svg'} w={55} h={55} />
+      <Container className="z-40 fixed backdrop-blur bg-white bg-opacity-40 bg-clip-padding">
+        <Flex content="between" className=" mt-1 ml-[40px]">
+          <Container className="my-auto">
+            <MyImage src={'/assets/immersyicon.svg'} w={55} h={55} />
+          </Container>
           <Burger pause={pause} onClick={handleClick} />
         </Flex>
       </Container>
