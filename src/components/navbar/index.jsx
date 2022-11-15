@@ -3,7 +3,7 @@ import Header from './header'
 
 const Navbar = ({ children }) => {
   return (
-    <Container>
+    <Container className="">
       <Header />
       {children}
       {/* <Footer current={current} /> */}

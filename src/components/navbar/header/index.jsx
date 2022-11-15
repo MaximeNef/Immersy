@@ -8,9 +8,10 @@ const Header = () => {
   const [pause, setPause] = useState(true)
   const [play, setPlay] = useState(false)
   return (
-    <Container className="w-full h-full mx-10">
-      <Flex content="between" className="w-full">
+    <Container className="">
+      <Flex content="between" className="">
         <MyImage src={'/assets/immersyicon.svg'} w={60} h={60} />
+
         <Burger pause={pause} play={play} />
       </Flex>
     </Container>

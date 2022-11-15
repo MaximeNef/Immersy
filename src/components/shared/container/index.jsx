@@ -27,7 +27,9 @@ const Container = (props) => {
       <div
         onClick={props.onClick}
         id={props.id}
-        className={`flex flex-col w-${findWidthClass()} ${props.className}`}
+        className={`w-full flex flex-col w-${findWidthClass()} ${
+          props.className
+        }  `}
         style={{
           ...(props.fitHeight && { height: 'fit-content' }),
           ...props.style,
