@@ -21,7 +21,7 @@ const Navbar = ({ children }) => {
     },
   ])
   return (
-    <Container className="">
+    <Container>
       <Header links={links} />
       {children}
       {/* <Footer current={current} /> */}
