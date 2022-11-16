@@ -4,6 +4,7 @@
 @layer base {
   html {
     font-family: 'Poppins', sans-serif;
-    @apply text-[#37474F];
+    @apply text-[#252525]
+];
   }
 }
