@@ -1,6 +1,22 @@
 import Head from 'next/head'
 import Navbar from '../components/navbar'
+import Information from '../components/shared/information'
 import Title from '../components/shared/title'
+
+const informations = [
+  {
+    text: 'Visite virtuelle en 3D',
+  },
+  {
+    text: 'Visite virtuelle en 3D',
+  },
+  {
+    text: 'Visite virtuelle en 3D',
+  },
+  {
+    text: 'Visite virtuelle en 3D',
+  },
+]
 
 export default function Home() {
   return (
@@ -11,6 +27,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Title color="text-black" mainTitle="mainTitle" subTitle="subTitle" />
+      <Information infos={informations} />
     </Navbar>
   )
 }
