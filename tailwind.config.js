@@ -7,7 +7,14 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        btn: '3px 4px 10px rgba(37, 37, 37, 0.25)',
+      },
+    },
+    letterSpacing: {
+      standard: '0.03em',
+    },
   },
   plugins: [],
 }

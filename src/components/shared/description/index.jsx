@@ -1,9 +1,7 @@
 const Description = (props) => {
   return (
     <div>
-      <p
-        className={`${props.color} text-left font-light leading-6 tracking-[0.03em]  `}
-      >
+      <p className={`${props.color} text-left font-light leading-6`}>
         {props.text}
       </p>
     </div>
