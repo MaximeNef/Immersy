@@ -7,4 +7,14 @@
     letter-spacing: 0.03em;
     @apply text-[#252525];
   }
+
+  #clip {
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.18) 0%,
+      rgba(255, 255, 255, 0.63) 49.48%,
+      #ffffff 100%
+    );
+  }
 }
