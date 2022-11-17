@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Navbar from '../components/navbar'
+import AvantageItems from '../components/shared/AvantageItems'
 import Information from '../components/shared/information'
 import Title from '../components/shared/title'
 
