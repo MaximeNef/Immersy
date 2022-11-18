@@ -21,12 +21,12 @@ const surfaces = [
 
 const PricingCards = () => {
   return (
-    <Container className="w-full h-[800px] bg-gray-400">
+    <Container className="w-full">
       {surfaces.map((surface, index) => {
         return (
           <Container
             key={index}
-            className="bg-[#1A2341] mx-auto w-[90%] my-6 text-white text-center rounded-xl border-[1px] border-white py-5 relative space-y-2"
+            className="bg-[#1A2341]  my-6 text-white text-center rounded-xl border-[1px] border-white py-5 relative space-y-2"
           >
             <Container className="w-fit absolute top-5 left-5">
               <MyImage

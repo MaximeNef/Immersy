@@ -4,7 +4,7 @@ import Description from '../../shared/description'
 import Information from '../../shared/information'
 import Title from '../../shared/title'
 
-const PourVous = () => {
+const BottomSection = () => {
   const infos = [
     { text: 'Visite virtuelle en 3D' },
     { text: 'Vidéo teaser de votre espace' },
@@ -13,21 +13,20 @@ const PourVous = () => {
     { text: 'Intégration de la visite à votre site web' },
   ]
   return (
-    <div className="mx-5 space-y-[50px] mb-5 mt-20">
+    <div className="mx-5 space-y-[50px] mb-10 mt-2">
       <Title
         color={'black'}
-        mainTitle={'Pour vous'}
-        subTitle={'nous faisons ce qu’il faut'}
+        mainTitle={'Votre projet'}
+        subTitle={'notre savoir-faire'}
       />
       <Description
         color="black"
         text={
-          'Chaque collaboration est unique, c’est pourquoi notre objectif est de vous apporter exactement ce dont vous avez besoin. '
+          'Parlez-nous de votre projet, que ce soit pour votre entreprise ou pour vos clients, nous avons la solution adaptée.'
         }
       />
-      <Information infos={infos} />
-      <Btn1 link={'/services'} colorBg={'blue'} text={'Nos services'} />
+      <Btn1 link={'/'} colorBg={'blue'} text={'Contact'} />
     </div>
   )
 }
-export default PourVous
+export default BottomSection

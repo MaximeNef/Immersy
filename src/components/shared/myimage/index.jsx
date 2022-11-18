@@ -17,7 +17,7 @@ const MyImage = ({
   priority,
 }) => {
   return (
-    <Container>
+    <Container className="">
       <Image
         loader={myLoader}
         src={src}

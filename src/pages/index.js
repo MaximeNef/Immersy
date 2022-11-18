@@ -1,11 +1,16 @@
 import Head from 'next/head'
+import Avantages from '../components/homepage/avantages'
 import Hero from '../components/homepage/hero'
 import PourVous from '../components/homepage/pourVous'
+import Tarif from '../components/homepage/tarif'
+import Realisation from '../components/homepage/realisation'
 import Navbar from '../components/navbar'
+import AvantageItems from '../components/shared/AvantageItems'
 import Btn1 from '../components/shared/btn1'
 import Information from '../components/shared/information'
 import PricingCards from '../components/shared/pricingCard'
 import Title from '../components/shared/title'
+import BottomSection from '../components/homepage/bottomSection'
 
 export default function Home() {
   // const informations = [
@@ -32,7 +37,10 @@ export default function Home() {
       </Head>
       <Hero />
       <PourVous />
-      {/* <Avantage/> */}
+      <Avantages />
+      <Realisation />
+      <Tarif />
+      <BottomSection />
     </Navbar>
   )
 }

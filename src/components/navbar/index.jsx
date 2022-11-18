@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Container from '../shared/container'
+import Footer from './footer'
 import Header from './header'
 
 const Navbar = ({ children }) => {
@@ -24,7 +25,7 @@ const Navbar = ({ children }) => {
     <Container>
       <Header links={links} />
       {children}
-      {/* <Footer current={current} /> */}
+      <Footer />
     </Container>
   )
 }
