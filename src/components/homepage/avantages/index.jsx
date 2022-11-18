@@ -7,7 +7,7 @@ const Avantages = () => {
   const avantages = [
     {
       img: '/assets/24-7.svg',
-      title: 'Accessible 24/24',
+      title: 'ACCESSIBLE 24/24',
       subtitle:
         'Vos clients ont accès au jumeau virtuel du bien à tout moment.',
     },
