@@ -4,7 +4,7 @@ import Flex from '../../shared/flex'
 const Popup = (props) => {
   const links = props.links
   return (
-    <Flex className="bg-white justify-center flex-col pl-16 space-y-16 pt-40 mx-auto">
+    <Flex className="bg-white justify-center flex-col pl-16 space-y-16 mx-aut h-[100vh]">
       {links.map((link, index) => {
         return (
           <p

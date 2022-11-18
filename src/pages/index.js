@@ -10,6 +10,7 @@ import Btn1 from '../components/shared/btn1'
 import Information from '../components/shared/information'
 import PricingCards from '../components/shared/pricingCard'
 import Title from '../components/shared/title'
+import BottomSection from '../components/homepage/bottomSection'
 
 export default function Home() {
   // const informations = [
@@ -38,6 +39,8 @@ export default function Home() {
       <PourVous />
       <Avantages />
       <Realisation />
+      <Tarif />
+      <BottomSection />
     </Navbar>
   )
 }

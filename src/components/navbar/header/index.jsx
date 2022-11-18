@@ -31,7 +31,7 @@ const Header = (props) => {
 
   return (
     <>
-      <Container className="z-40 sticky backdrop-blur bg-white bg-opacity-40 bg-clip-padding">
+      <Container className="z-[99] fixed backdrop-blur bg-white bg-opacity-40 bg-clip-padding">
         <Flex className="justify-between mt-1 ml-[40px]">
           <Container className="my-auto">
             <MyImage src={'/assets/immersyicon.svg'} w={55} h={55} />
@@ -44,7 +44,7 @@ const Header = (props) => {
         initial={false}
         variants={variants}
         animate={isOpen ? 'open' : 'closed'}
-        className="min-h-full fixed w-full "
+        className="min-h-screen fixed w-full  z-[98]"
         transition={{
           duration: 0.5,
         }}
