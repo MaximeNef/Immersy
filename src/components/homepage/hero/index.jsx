@@ -6,9 +6,12 @@ const Hero = () => {
     <Container className="w-full h-screen">
       <MyImage src="/assets/home.png" layout="fill" />
       <div id="clip" className="bg-black w-full h-28 absolute bottom-0" />
-      <Container className="absolute bottom-0 animate-bounce">
+      <div
+        className="absolute bottom-3  left-1/2 transform -translate-x-1/2 -translate-y-1/2
+ animate-bounce"
+      >
         <MyImage src="/assets/arrowDown.svg" w="25" h="25" />
-      </Container>
+      </div>
     </Container>
   )
 }
