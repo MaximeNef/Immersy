@@ -3,6 +3,7 @@ import Avantages from '../components/homepage/avantages'
 import Hero from '../components/homepage/hero'
 import PourVous from '../components/homepage/pourVous'
 import Tarif from '../components/homepage/tarif'
+import Realisation from '../components/homepage/realisation'
 import Navbar from '../components/navbar'
 import AvantageItems from '../components/shared/AvantageItems'
 import Btn1 from '../components/shared/btn1'
@@ -34,6 +35,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
+      <PourVous />
+      <Avantages />
+      <Realisation />
     </Navbar>
   )
 }

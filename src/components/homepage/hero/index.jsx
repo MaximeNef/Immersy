@@ -16,5 +16,3 @@ const Hero = () => {
   )
 }
 export default Hero
-
-// clip-path: polygon(100% 0, 0% 100%, 100% 100%);
