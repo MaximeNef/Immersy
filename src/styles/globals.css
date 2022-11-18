@@ -30,6 +30,11 @@
     background: #1a2341;
   }
 
+  #pyramid-clip {
+    clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+    background: #1a2341;
+  }
+
   #blue-wave {
     clip-path: polygon(
       100% 0%,
