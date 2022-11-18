@@ -3,7 +3,7 @@ import MyImage from '../../shared/myimage'
 
 const Hero = () => {
   return (
-    <Container className="w-full h-screen">
+    <Container className="w-full h-screen mb-[-100px]">
       <MyImage src="/assets/home.png" layout="fill" />
       <div id="clip" className="w-full h-28 absolute bottom-0" />
       <div

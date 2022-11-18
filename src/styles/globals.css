@@ -7,7 +7,14 @@
     letter-spacing: 0.03em;
     @apply text-[#252525];
   }
-
+  #footer {
+    background: linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      rgba(26, 35, 65, 0.16) 11.46%,
+      rgba(26, 35, 65, 0.44) 32.29%,
+      #1a2341 100%
+    );
+  }
   #clip {
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     background: linear-gradient(
