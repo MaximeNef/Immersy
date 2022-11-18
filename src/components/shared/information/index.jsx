@@ -2,10 +2,10 @@ import Container from '../container'
 import Flex from '../flex'
 import MyImage from '../myimage'
 
-const Information = (props) => {
+const Information = ({ infos }) => {
   return (
     <Container>
-      {props.infos.map((info, index) => {
+      {infos.map((info, index) => {
         return (
           <Flex key={index} className="my-2">
             <Container className="w-fit mr-4">

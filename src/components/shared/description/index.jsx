@@ -1,9 +1,7 @@
-const Description = (props) => {
+const Description = ({ color, text }) => {
   return (
     <div>
-      <p className={`${props.color} text-left font-light leading-6`}>
-        {props.text}
-      </p>
+      <p className={`${color} text-left font-light leading-6`}>{text}</p>
     </div>
   )
 }

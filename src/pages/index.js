@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Hero from '../components/homepage/hero'
+import PourVous from '../components/homepage/pourVous'
 import Navbar from '../components/navbar'
 import Btn1 from '../components/shared/btn1'
 import Information from '../components/shared/information'
@@ -7,20 +8,20 @@ import PricingCards from '../components/shared/pricingCard'
 import Title from '../components/shared/title'
 
 export default function Home() {
-  const informations = [
-    {
-      text: 'Visite virtuelle en 3D',
-    },
-    {
-      text: 'Visite virtuelle en 3D',
-    },
-    {
-      text: 'Visite virtuelle en 3D',
-    },
-    {
-      text: 'Visite virtuelle en 3D',
-    },
-  ]
+  // const informations = [
+  //   {
+  //     text: 'Visite virtuelle en 3D',
+  //   },
+  //   {
+  //     text: 'Visite virtuelle en 3D',
+  //   },
+  //   {
+  //     text: 'Visite virtuelle en 3D',
+  //   },
+  //   {
+  //     text: 'Visite virtuelle en 3D',
+  //   },
+  // ]
 
   return (
     <Navbar>
@@ -30,10 +31,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero />
-      <Title color="text-black" mainTitle="mainTitle" subTitle="subTitle" />
-      <Information infos={informations} />
-      <Btn1 link="/services" text="Nos Services" />
-      <PricingCards />
+      <PourVous />
+      {/* <Avantage/> */}
     </Navbar>
   )
 }
