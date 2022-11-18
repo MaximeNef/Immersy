@@ -1,7 +1,9 @@
 import Head from 'next/head'
+import Avantages from '../components/homepage/avantages'
 import Hero from '../components/homepage/hero'
 import PourVous from '../components/homepage/pourVous'
 import Navbar from '../components/navbar'
+import AvantageItems from '../components/shared/AvantageItems'
 import Btn1 from '../components/shared/btn1'
 import Information from '../components/shared/information'
 import PricingCards from '../components/shared/pricingCard'
@@ -32,7 +34,7 @@ export default function Home() {
       </Head>
       <Hero />
       <PourVous />
-      {/* <Avantage/> */}
+      <Avantages />
     </Navbar>
   )
 }
