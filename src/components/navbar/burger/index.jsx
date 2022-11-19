@@ -1,5 +1,5 @@
 import Lottie from 'react-lottie'
-import burgerMenu from '../../../../public/lotties/burgermenu.json'
+import burgerMenu from '../../../../public/lotties/burger3.json'
 
 const Burger = (props) => {
   const defaultOptions = {
