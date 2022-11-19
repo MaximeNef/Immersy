@@ -15,8 +15,8 @@ const Burger = (props) => {
     <div onClick={props.onClick} className="my-auto mr-3">
       <Lottie
         options={defaultOptions}
-        height={80}
-        width={80}
+        height={50}
+        width={50}
         isPaused={props.pause}
       />
     </div>

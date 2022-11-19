@@ -31,10 +31,10 @@ const Header = (props) => {
 
   return (
     <>
-      <Container className="z-[99] fixed backdrop-blur bg-white bg-opacity-40 bg-clip-padding">
-        <Flex className="justify-between mt-1 ml-[40px]">
+      <Container className="z-[99] fixed backdrop-blur bg-white bg-opacity-40 bg-clip-padding py-1">
+        <Flex className="justify-between mt-[0px] ml-[40px]">
           <Container className="my-auto">
-            <MyImage src={'/assets/immersyicon.svg'} w={55} h={55} />
+            <MyImage src={'/assets/immersyicon.svg'} w={42} h={42} />
           </Container>
           <Burger pause={pause} onClick={handleClick} />
         </Flex>
