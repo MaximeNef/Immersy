@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Container from '../../shared/container'
-import Flex from '../../shared/Flex'
-import MyImage from '../../shared/MyImage'
+import Flex from '../../shared/flex'
+import MyImage from '../../shared/myimage'
 
 const Footer = () => {
   return (

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Container from '../container'
-import Flex from '../Flex'
-import MyImage from '../MyImage'
+import Flex from '../flex'
+import MyImage from '../myimage'
 
 const AvantageItems = ({ avantages, color }) => {
   // const Avantages = [
