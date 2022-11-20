@@ -11,8 +11,6 @@ import Information from '../components/shared/information'
 import PricingCards from '../components/shared/pricingCard'
 import Title from '../components/shared/title'
 import BottomSection from '../components/homepage/bottomSection'
-import Burger from '../components/navbar/burger'
-import { useState } from 'react'
 
 export default function Home() {
   // const informations = [
@@ -29,18 +27,7 @@ export default function Home() {
   //     text: 'Visite virtuelle en 3D',
   //   },
   // ]
-  const [pause, setPause] = useState(true)
-  const [isOpen, setIsOpen] = useState(false)
 
-  function handleClick() {
-    if (pause) {
-      setIsOpen((isOpen) => !isOpen)
-      setTimeout(() => {
-        setPause((pause) => !pause)
-      }, 520)
-      setPause((pause) => !pause)
-    }
-  }
   return (
     <Navbar>
       <Head>
@@ -51,7 +38,6 @@ export default function Home() {
       <Hero />
       <PourVous />
       <Avantages />
-      <Burger pause={pause} onClick={handleClick} />
 
       <Realisation />
       <Tarif />
