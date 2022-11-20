@@ -1,5 +1,5 @@
 import Lottie from 'react-lottie'
-import burgerMenu from '../../../../public/lotties/burger3.json'
+import burgerMenu from '../../../../public/assets/burgermenu.json'
 
 const Burger = (props) => {
   const defaultOptions = {
@@ -12,7 +12,7 @@ const Burger = (props) => {
     },
   }
   return (
-    <div onClick={props.onClick} className="my-auto mr-3">
+    <div onClick={props.onClick} className="my-auto mr-3 fixed">
       <Lottie
         options={defaultOptions}
         height={50}
