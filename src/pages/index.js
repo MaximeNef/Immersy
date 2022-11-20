@@ -12,6 +12,7 @@ import PricingCards from '../components/shared/pricingCard'
 import Title from '../components/shared/title'
 import BottomSection from '../components/homepage/bottomSection'
 import Burger from '../components/navbar/burger'
+import { useState } from 'react'
 
 export default function Home() {
   // const informations = [
