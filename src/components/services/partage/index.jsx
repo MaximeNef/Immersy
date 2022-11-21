@@ -4,7 +4,7 @@ import Title from '../../shared/title'
 const Partage = () => {
   const infos = [
     { text: 'Intégration de la visite à votre site web' },
-    { text: 'Partage de la visite sur les réseaux, par mail , etc' },
+    { text: 'Partage de la visite sur les réseaux, par mail, etc' },
     { text: 'Visite disponible sur mobile et pc' },
   ]
   return (

@@ -3,6 +3,7 @@ import Navbar from '../../components/navbar'
 import Base from '../../components/services/base'
 import Besoins from '../../components/services/besoins'
 import Partage from '../../components/services/partage'
+import PetitsPlus from '../../components/services/petitsPlus'
 
 const Services = () => {
   return (
@@ -15,6 +16,7 @@ const Services = () => {
       <Besoins />
       <Base />
       <Partage />
+      <PetitsPlus />
     </Navbar>
   )
 }
