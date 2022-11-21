@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbar from '../../components/navbar'
-import Besoins from '../../components/services/services'
+import Base from '../../components/services/base'
+import Besoins from '../../components/services/besoins'
 
 const Services = () => {
   return (
@@ -11,6 +12,7 @@ const Services = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Besoins />
+      <Base />
     </Navbar>
   )
 }

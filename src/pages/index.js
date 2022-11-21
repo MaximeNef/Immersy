@@ -5,11 +5,6 @@ import PourVous from '../components/homepage/pourVous'
 import Tarif from '../components/homepage/tarif'
 import Realisation from '../components/homepage/realisation'
 import Navbar from '../components/navbar'
-import AvantageItems from '../components/shared/AvantageItems'
-import Btn1 from '../components/shared/btn1'
-import Information from '../components/shared/information'
-import PricingCards from '../components/shared/pricingCard'
-import Title from '../components/shared/title'
 import BottomSection from '../components/homepage/bottomSection'
 
 export default function Home() {
@@ -38,7 +33,6 @@ export default function Home() {
       <Hero />
       <PourVous />
       <Avantages />
-
       <Realisation />
       <Tarif />
       <BottomSection />
