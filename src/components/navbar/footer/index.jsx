@@ -3,15 +3,18 @@ import Container from '../../shared/container'
 import Flex from '../../shared/flex'
 import MyImage from '../../shared/myimage'
 
-const Footer = () => {
+const Footer = ({ current }) => {
   return (
-    <div id="footer" className="pt-20 pb-10">
-      <Flex className=" justify-center items-center text-white bg-">
+    <div
+      id={`${current == 'services' ? 'blue-footer' : 'footer'}`}
+      className="pt-20 pb-10"
+    >
+      <Flex className=" justify-center items-center text-white">
         <Container className="text-center flex flex-col items-left space-y-1 pl-5 ">
           <Link href="/" className=" text-sm text-left font-light">
             Accueil
           </Link>
-          <Link href="/" className=" text-sm text-left font-light">
+          <Link href="/services" className=" text-sm text-left font-light">
             Nos services
           </Link>
           <Link href="/" className=" text-sm text-left font-light">
