@@ -51,14 +51,14 @@ const AvantagesServices = () => {
 
   return (
     <Container>
-      <div id="blue-clip" className="w-full h-20 rotate-180" />
-      <Container className="py-5 mt-5">
+      <div id="blue-clip" className="w-full h-24 rotate-180" />
+      <Container className="mt-10">
         <div className="mx-5 space-y-[35px] ">
           <Title mainTitle="Les avantages" subTitle="d’une visite virtuelle" />
           <AvantageItems avantages={avantages} />
         </div>
       </Container>
-      <div id="blue-wave" className="w-full h-24 rotate-180" />
+      <div id="blue-wave" className="w-full h-20 rotate-180" />
     </Container>
   )
 }
