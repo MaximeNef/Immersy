@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Navbar from '../../components/navbar'
 import Base from '../../components/services/base'
 import Besoins from '../../components/services/besoins'
+import Partage from '../../components/services/partage'
 
 const Services = () => {
   return (
@@ -13,6 +14,7 @@ const Services = () => {
       </Head>
       <Besoins />
       <Base />
+      <Partage />
     </Navbar>
   )
 }
