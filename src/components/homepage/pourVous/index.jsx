@@ -1,5 +1,4 @@
 import Btn1 from '../../shared/btn1'
-import Container from '../../shared/container'
 import Description from '../../shared/description'
 import Information from '../../shared/information'
 import Title from '../../shared/title'

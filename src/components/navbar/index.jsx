@@ -3,7 +3,7 @@ import Container from '../shared/container'
 import Footer from './footer'
 import Header from './header'
 
-const Navbar = ({ children }) => {
+const Navbar = ({ children, current }) => {
   const [links, setLinks] = useState([
     {
       page: 'Accueil',
@@ -25,7 +25,7 @@ const Navbar = ({ children }) => {
     <Container>
       <Header links={links} />
       {children}
-      <Footer />
+      <Footer current={current} />
     </Container>
   )
 }
