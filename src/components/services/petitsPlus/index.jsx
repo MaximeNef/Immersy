@@ -9,7 +9,7 @@ const PetitsPlus = () => {
     { text: 'Immersion totale via un casque VR' },
   ]
   return (
-    <div className="bg-[#1A2341] text-white">
+    <div className="bg-[#1A2341] text-white pb-5">
       <div id="blue-wave" className="w-full h-5" />
       <div className="px-5">
         <div className="space-y-[50px] mb-5">
@@ -17,7 +17,6 @@ const PetitsPlus = () => {
           <Information infos={infos} />
         </div>
       </div>
-      {/* <div id="blue-clip" className="w-full h-20 rotate-180" /> */}
     </div>
   )
 }

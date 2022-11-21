@@ -7,7 +7,7 @@ const AvantageItems = ({ avantages, color }) => {
   // const Avantages = [
   //   {
   //     img: '/assets/24-7.svg',
-  //     title: 'Accessible 24/24',
+  //     title: 'ACCESSIBLE 24/24',
   //     subtitle:
   //       'Vos clients ont accès au jumeau virtuel du bien à tout moment.',
   //   },
@@ -25,7 +25,7 @@ const AvantageItems = ({ avantages, color }) => {
   //   },
   //   {
   //     img: '/assets/immersion.svg',
-  //     title: 'Immersion totale',
+  //     title: 'IMMERSION TOTALE',
   //     subtitle:
   //       'Grâce à la technologie VR, il est possible de diffuser votre bien dans un casque VR pour une immersion totale.',
   //   },
