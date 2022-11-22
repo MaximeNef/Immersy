@@ -47,11 +47,6 @@
     background: #1a2341;
   }
 
-  #triangle-clip {
-    clip-path: polygon(60% 0, 0% 100%, 100% 100%);
-    background: #1a2341;
-  }
-
   #blue-wave {
     clip-path: polygon(
       100% 0%,

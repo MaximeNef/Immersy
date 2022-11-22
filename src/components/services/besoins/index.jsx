@@ -22,7 +22,7 @@ const Besoins = () => {
           fontWeight={'font-semibold'}
         />
       </div>
-      <div id="triangle-clip" className="w-full h-12" />
+      <div id="pyramid-clip" className="w-full h-12" />
     </div>
   )
 }
