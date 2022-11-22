@@ -31,7 +31,7 @@ const Header = (props) => {
 
   return (
     <>
-      <Container className="z-[90] fixed backdrop-blur bg-white bg-opacity-40 bg-clip-padding py-1">
+      <Container className="z-[99] fixed backdrop-blur bg-white bg-opacity-40 bg-clip-padding py-1">
         <Flex className="justify-between mt-[0px] ml-[40px]">
           <Container className="my-auto">
             <MyImage src={'/assets/immersyicon.svg'} w={42} h={42} />
