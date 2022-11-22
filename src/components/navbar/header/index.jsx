@@ -6,7 +6,7 @@ import MyImage from '../../shared/myimage'
 import Burger from '../burger'
 import Popup from '../popup'
 
-const Header = (props) => {
+const Header = ({ links }) => {
   const [pause, setPause] = useState(true)
   const [isOpen, setIsOpen] = useState(false)
 
@@ -49,7 +49,7 @@ const Header = (props) => {
           duration: 0.5,
         }}
       >
-        <Popup links={props.links} />
+        <Popup links={links} />
       </motion.div>
     </>
   )

@@ -1,8 +1,18 @@
-const Container = (props) => {
+const Container = ({
+  type,
+  onClick,
+  id,
+  className,
+  fitHeight,
+  style,
+  onMouseEnter,
+  onMouseLeave,
+  children,
+}) => {
   const classes = 'w-full w-xl w-lg w-md w-sm w-xs'
 
   function findWidthClass() {
-    switch (props.type) {
+    switch (type) {
       case 'full':
         return 'full'
       case '3xl':
@@ -25,19 +35,17 @@ const Container = (props) => {
   return (
     <>
       <div
-        onClick={props.onClick}
-        id={props.id}
-        className={`w-full flex flex-col w-${findWidthClass()} ${
-          props.className
-        }  `}
+        onClick={onClick}
+        id={id}
+        className={`w-full flex flex-col w-${findWidthClass()} ${className}  `}
         style={{
-          ...(props.fitHeight && { height: 'fit-content' }),
-          ...props.style,
+          ...(fitHeight && { height: 'fit-content' }),
+          ...style,
         }}
-        onMouseEnter={props.onMouseEnter}
-        onMouseLeave={props.onMouseLeave}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
       >
-        {props.children}
+        {children}
       </div>
     </>
   )

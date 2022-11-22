@@ -2,7 +2,7 @@ import React from 'react'
 import Lottie from 'react-lottie'
 import burgerMenu from '../../../../public/lotties/burgermenu.json'
 
-const Burger = (props) => {
+const Burger = ({ onClick, pause }) => {
   const defaultOptions = {
     // name: 'menuBurger',
     loop: true,
@@ -13,12 +13,12 @@ const Burger = (props) => {
     },
   }
   return (
-    <div onClick={props.onClick} className="my-auto mr-3 z-[99]">
+    <div onClick={onClick} className="my-auto mr-3 z-[99]">
       <Lottie
         options={defaultOptions}
         height={50}
         width={50}
-        isPaused={props.pause}
+        isPaused={pause}
       />
     </div>
   )
