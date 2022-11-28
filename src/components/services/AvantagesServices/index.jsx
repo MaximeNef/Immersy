@@ -1,5 +1,4 @@
 import AvantageItems from '../../shared/AvantageItems'
-import Btn1 from '../../shared/btn1'
 import Container from '../../shared/container'
 import Title from '../../shared/title'
 
