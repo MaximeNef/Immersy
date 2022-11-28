@@ -1,6 +1,6 @@
 import React from 'react'
 import Lottie from 'react-lottie'
-import burgerMenu from '../../../../public/lotties/burgermenu.json'
+import burgerMenu from '../../../../public/assets/burgermenu.json'
 
 const Burger = ({ onClick, pause }) => {
   const defaultOptions = {
