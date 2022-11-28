@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Navbar from '../../components/navbar'
+import AvantagesServices from '../../components/services/avantagesServices'
 import Base from '../../components/services/base'
 import Besoins from '../../components/services/besoins'
 import Partage from '../../components/services/partage'
@@ -18,7 +19,7 @@ const Services = () => {
       <Base />
       <Partage />
       <PetitsPlus />
-      {/* <AvantagesServices /> */}
+      <AvantagesServices />
       <Projet />
     </Navbar>
   )
