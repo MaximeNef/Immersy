@@ -5,7 +5,7 @@ import Base from '../../components/services/base'
 import Besoins from '../../components/services/besoins'
 import Partage from '../../components/services/partage'
 import PetitsPlus from '../../components/services/petitsPlus'
-import Projet from '../../components/services/projet'
+import Projet from '../../components/shared/projet'
 
 const Services = () => {
   return (
@@ -20,7 +20,7 @@ const Services = () => {
       <Partage />
       <PetitsPlus />
       <AvantagesServices />
-      <Projet />
+      <Projet blue={true} />
     </Navbar>
   )
 }

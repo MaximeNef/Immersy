@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Navbar from '../../components/navbar'
 import Realisation from '../../components/realisations/realisation'
+import Container from '../../components/shared/container'
+import Projet from '../../components/shared/projet'
 
 const Realisations = () => {
   return (
@@ -11,6 +13,9 @@ const Realisations = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Realisation />
+      <Container className="mt-12">
+        <Projet blue={false} />
+      </Container>
     </Navbar>
   )
 }

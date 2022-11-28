@@ -1,10 +1,14 @@
-import Btn1 from '../../shared/btn1'
-import Description from '../../shared/description'
-import Title from '../../shared/title'
+import Btn1 from '../btn1'
+import Description from '../description'
+import Title from '../title'
 
-const Projet = () => {
+const Projet = ({ current, blue }) => {
   return (
-    <div className="px-5 space-y-[50px] bg-[#1A2341] text-white">
+    <div
+      className={`px-5 space-y-[50px] ${
+        blue ? 'bg-[#1A2341] text-white' : null
+      }`}
+    >
       <Title mainTitle={'Votre projet'} subTitle={'notre savoir-faire'} />
       <Description
         text={
@@ -12,7 +16,7 @@ const Projet = () => {
         }
       />
       <div className="pt-10 pb-16">
-        <Btn1 text={'Contact'} link={'/'} />
+        <Btn1 text={'Contact'} link={'/'} colorBg={`${blue ? null : 'blue'}`} />
       </div>
     </div>
   )
