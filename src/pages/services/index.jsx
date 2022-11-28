@@ -19,7 +19,7 @@ const Services = () => {
       <Base />
       <Partage />
       <PetitsPlus />
-      <AvantagesServices />
+      {/* <AvantagesServices /> */}
       <Projet />
     </Navbar>
   )
