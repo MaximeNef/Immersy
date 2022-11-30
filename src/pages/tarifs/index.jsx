@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Navbar from '../../components/navbar'
 import Simulez from '../../components/tarifs/simulez'
 import TarifsCustom from '../../components/tarifs/tarifsCustom'
-import Projet from '../../components/shared/projet'
 import TarifsProjet from '../../components/tarifs/tarifsProjet'
 
 const Tarifs = () => {

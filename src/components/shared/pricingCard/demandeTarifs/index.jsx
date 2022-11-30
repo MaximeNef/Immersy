@@ -4,7 +4,7 @@ import MyImage from '../../myimage'
 
 const DemandeTarifs = () => {
   return (
-    <Link href="/">
+    <Link href={{ pathname: '/tarifs/contact', query: { surface: null } }}>
       <Container className="bg-[#1A2341]  my-2 text-white text-center rounded-xl border-[1px] border-white py-5 relative space-y-2">
         <Container className="w-fit absolute top-5 left-5">
           <MyImage alt="surface icon" src="/assets/surface.svg" w="50" h="50" />

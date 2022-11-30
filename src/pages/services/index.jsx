@@ -20,7 +20,6 @@ const Services = () => {
       <Partage />
       <PetitsPlus />
       <AvantagesList />
-      <Projet />
       <Projet blue={true} />
     </Navbar>
   )

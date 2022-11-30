@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Router from 'next/router'
 import Container from '../container'
 import Flex from '../flex'
 import MyImage from '../myimage'
@@ -9,16 +8,19 @@ const surfaces = [
     type: 'Surface standard',
     surface: '> 150',
     price: '1,99€',
+    query: null,
   },
   {
     type: 'Surface moyenne',
     surface: '150 - 300',
     price: '1,99€ - 1,69€',
+    query: 'moyenne',
   },
   {
-    type: 'Surface standard',
+    type: 'Surface grande',
     surface: '< 300',
     price: 'Apd 1,69€',
+    query: 'grande',
   },
 ]
 
@@ -31,7 +33,7 @@ const PricingCards = () => {
             key={index}
             href={{
               pathname: 'tarifs/contact',
-              query: { client: 'particulier' },
+              query: { surface: surface.query },
             }}
           >
             <Container className="bg-[#1A2341]  my-2 text-white text-center rounded-xl border-[1px] border-white py-5 relative space-y-2">
