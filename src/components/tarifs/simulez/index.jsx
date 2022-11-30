@@ -37,7 +37,7 @@ const Simulez = () => {
     }
   }
   return (
-    <div className="mt-32 mx-5">
+    <div className="mt-12 mx-5">
       <Title mainTitle="Simulez votre tarif" subTitle="prix indicatif" />
       <div className="text-center w-full mt-12 mb-6">
         <Title mainTitle={`Tarif estimé : ${prix} €`} />
