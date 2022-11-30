@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Router from 'next/router'
 import Container from '../container'
 import Flex from '../flex'
 import MyImage from '../myimage'
@@ -26,7 +27,13 @@ const PricingCards = () => {
     <Container className="w-full">
       {surfaces.map((surface, index) => {
         return (
-          <Link key={index} href="/">
+          <Link
+            key={index}
+            href={{
+              pathname: 'tarifs/contact',
+              query: { client: 'particulier' },
+            }}
+          >
             <Container className="bg-[#1A2341]  my-2 text-white text-center rounded-xl border-[1px] border-white py-5 relative space-y-2">
               <Container className="w-fit absolute top-5 left-5">
                 <MyImage

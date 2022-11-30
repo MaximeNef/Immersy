@@ -1,6 +1,3 @@
-import Link from 'next/link'
-import Container from '../../shared/container'
-import MyImage from '../../shared/myimage'
 import PricingCards from '../../shared/pricingCard'
 import DemandeTarifs from '../../shared/pricingCard/demandeTarifs'
 import Title from '../../shared/title'

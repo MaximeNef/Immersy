@@ -6,7 +6,7 @@ import MyImage from '../../shared/myimage'
 const Footer = ({ current }) => {
   return (
     <div
-      id={`${current == 'services' ? 'blue-footer' : 'footer'}`}
+      id={`${current == 'services' || 'tarifs' ? 'blue-footer' : 'footer'}`}
       className="pt-20 pb-10"
     >
       <Flex className=" justify-center items-center text-white">
