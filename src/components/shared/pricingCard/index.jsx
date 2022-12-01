@@ -8,7 +8,7 @@ const surfaces = [
     type: 'Surface standard',
     surface: '> 150',
     price: '1,99€',
-    query: null,
+    query: 'standard',
   },
   {
     type: 'Surface moyenne',
