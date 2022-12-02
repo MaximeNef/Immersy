@@ -1,7 +1,7 @@
-import TitreTarifs from '../../../components/tarifs/contact/titre'
+import TitreTarifs from '../../../components/tarifs/titreTarifs'
 import Navbar from '../../../components/navbar'
 import Head from 'next/head'
-import TarifForm from '../../../components/tarifs/contact/tarifForm'
+import TarifForm from '../../../components/tarifs/tarifForm'
 
 export const getServerSideProps = (context) => {
   return {
