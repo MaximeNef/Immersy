@@ -1,6 +1,7 @@
 import TitreTarifs from '../../../components/tarifs/contact/titre'
 import Navbar from '../../../components/navbar'
 import Head from 'next/head'
+import TarifForm from '../../../components/tarifs/contact/tarifForm'
 
 export const getServerSideProps = (context) => {
   return {
@@ -42,6 +43,7 @@ const TarifContact = ({ surface }) => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <TitreTarifs surfaceInfo={surfaceInfo} />
+        <TarifForm />
       </Navbar>
     </div>
   )

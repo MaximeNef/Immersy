@@ -1,6 +1,6 @@
 const TitreTarifs = ({ surfaceInfo }) => {
   return (
-    <div className="mt-24 mx-5">
+    <div className="mt-32 mx-5">
       <h2 className={`text-xl`}>Demande de tarif</h2>
       <h2 className={`text-xl font-thin`}>
         pour une{' '}
