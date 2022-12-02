@@ -1,12 +1,19 @@
-const Input = ({ data, setData, type, placeholder }) => {
+const Input = ({ data, setData, type, placeholder, attribut }) => {
+  console.log(data, 'data')
   const renderInput = () => {
     return (
       <input
+        name={attribut}
         type="text"
         placeholder={placeholder}
         value={data}
         onChange={(e) => {
-          setData(e.currentTarget.value)
+          const { name, value } = e.target
+
+          setData((prevData) => ({
+            ...prevData,
+            [name]: value,
+          }))
         }}
       />
     )

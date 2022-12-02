@@ -1,10 +1,19 @@
 import { useState } from 'react'
 import BtnStatut from '../../../shared/btnStatut'
+import ContactForm from '../../../shared/contact'
 import Input from '../../../shared/input'
 import Title from '../../../shared/title'
 
 const TarifForm = () => {
   const [selected, setSelected] = useState('')
+
+  const [form, setForm] = useState({
+    nom: '',
+    prenom: '',
+    mail: '',
+    entreprise: '',
+    tel: '',
+  })
 
   const handleClick = (value) => {
     setSelected(value.text)
@@ -32,8 +41,9 @@ const TarifForm = () => {
         <div className="mb-10">
           <Title mainTitle="Nombres de biens ..." />
         </div>
-
         <Input placeholder={'test'} type="input" />
+        <ContactForm data={form} setData={setForm} />
+        {}
       </form>
     </div>
   )
