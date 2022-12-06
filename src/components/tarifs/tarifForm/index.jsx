@@ -6,14 +6,14 @@ import Title from '../../shared/title'
 
 const TarifForm = () => {
   const [form, setForm] = useState({
-    selected: '',
-    nombreBiens: '',
-    superficie: '',
     nom: '',
     prenom: '',
     mail: '',
     entreprise: '',
     tel: '',
+    selected: '',
+    nombreBiens: '',
+    superficie: '',
   })
 
   const handleClick = (value) => {
@@ -23,49 +23,70 @@ const TarifForm = () => {
     }))
   }
 
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    console.log(form)
+
+    const res = await fetch('/api/contact', {
+      body: JSON.stringify({
+        nom: form.nom,
+        prenom: form.prenom,
+        mail: form.mail,
+        entreprise: form.entreprise,
+        telephone: form.tel,
+        selected: form.selected,
+        nombreBiens: form.nombreBiens,
+      }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      method: 'POST',
+    })
+  }
+
   return (
     <div className="mx-5 mt-12">
       <div className="mb-5">
         <Title mainTitle="Je suis un ..." />
       </div>
-      <div className="space-y-[16px] mb-[50px]">
-        <BtnStatut
-          text="Particulier"
-          handleClick={handleClick}
-          selected={form.selected}
-        />
-        <BtnStatut
-          text="Professionel"
-          handleClick={handleClick}
-          selected={form.selected}
-        />
-      </div>
-      <form method="post" /*onSubmit={handleSubmit} */>
+      <form method="post" onSubmit={handleSubmit}>
+        <div className="space-y-[16px] mb-[50px]">
+          <BtnStatut
+            text="Particulier"
+            handleClick={handleClick}
+            selected={form.selected}
+          />
+          <BtnStatut
+            text="Professionel"
+            handleClick={handleClick}
+            selected={form.selected}
+          />
+        </div>
         <div className="mb-[30px]">
           <div className="mb-5">
-            <Title mainTitle="Nombres de biens ..." />
+            <Title mainTitle="Nombres de biens..." />
           </div>
           <Input
             placeholder={'Nombre de biens à virtualiser'}
             type="input"
             data={form.nombreBiens}
             setData={setForm}
-            attribut="nombreBiens"
+            name="nombreBiens"
           />
         </div>
         <div className="mb-10">
           <div className="mb-5">
-            <Title mainTitle="Superficie totale ..." />
+            <Title mainTitle="Superficie totale..." />
           </div>
           <Input
             placeholder={'Nombre de m²'}
             type="input"
             data={form.superficie}
             setData={setForm}
-            attribut="superficie"
+            name="superficie"
           />
         </div>
-        <ContactForm data={form} setData={setForm} />
+        <ContactForm data={form} setData={setForm} textarea={false} />
       </form>
     </div>
   )

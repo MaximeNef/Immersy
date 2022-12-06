@@ -1,9 +1,9 @@
-const Input = ({ data, setData, type, placeholder, attribut }) => {
+const Input = ({ data, setData, type, placeholder, name }) => {
   console.log(data, 'data')
   const renderInput = () => {
     return (
       <input
-        name={attribut}
+        name={name}
         placeholder={placeholder}
         value={data}
         onChange={(e) => {

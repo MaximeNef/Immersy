@@ -1,8 +1,9 @@
 import Flex from '../flex'
+import FormSubmitBtn from '../formSubmitBtn'
 import Input from '../input'
 import Title from '../title'
 
-const ContactForm = ({ data, setData }) => {
+const ContactForm = ({ data, setData, textarea }) => {
   console.log(data, 'data')
 
   return (
@@ -15,14 +16,14 @@ const ContactForm = ({ data, setData }) => {
             type="input"
             data={data.prenom}
             setData={setData}
-            attribut="prenom"
+            name="prenom"
           />
           <Input
             placeholder={'Nom*'}
             type="input"
             data={data.nom}
             setData={setData}
-            attribut="nom"
+            name="nom"
           />
         </Flex>
         <Input
@@ -30,22 +31,32 @@ const ContactForm = ({ data, setData }) => {
           type="input"
           data={data.mail}
           setData={setData}
-          attribut="mail"
+          name="mail"
         />
         <Input
           placeholder={'Nom d’entreprise'}
           type="input"
           data={data.entreprise}
           setData={setData}
-          attribut="entreprise"
+          name="entreprise"
         />
         <Input
           placeholder={'Téléphone'}
           type="input"
           data={data.tel}
           setData={setData}
-          attribut="tel"
+          name="tel"
         />
+        {textarea ? (
+          <Input
+            placeholder={'Votre question / message'}
+            type="textarea"
+            data={data.message}
+            setData={setData}
+            name="message"
+          />
+        ) : null}
+        <FormSubmitBtn text="Envoyer" colorBg="blue" />
       </div>
     </>
   )
