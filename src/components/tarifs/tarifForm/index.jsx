@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import { useState } from 'react'
-import BtnStatut from '../../shared/btnStatut'
+import CarteContact from '../../shared/cartecontact'
 import ContactForm from '../../shared/contact'
 import Input from '../../shared/input'
 import Title from '../../shared/title'
@@ -53,12 +53,12 @@ const TarifForm = () => {
       </div>
       <form method="post" onSubmit={handleSubmit}>
         <div className="space-y-[16px] mb-[50px]">
-          <BtnStatut
+          <CarteContact
             text="Particulier"
             handleClick={handleClick}
             selected={form.selected}
           />
-          <BtnStatut
+          <CarteContact
             text="Professionel"
             handleClick={handleClick}
             selected={form.selected}
