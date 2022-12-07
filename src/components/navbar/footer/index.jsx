@@ -30,12 +30,14 @@ const Footer = ({ current }) => {
           </Link>
         </Container>
         <Container className=" ml-auto flex flex-col items-center min-w-[62px] max-w-[62px]">
-          <MyImage
-            src={'/assets/immersyicon.svg'}
-            w={62}
-            h={74}
-            className={'mx-auto'}
-          />
+          <Link href="/">
+            <MyImage
+              src={'/assets/immersyicon.svg'}
+              w={62}
+              h={74}
+              className={'mx-auto'}
+            />
+          </Link>
         </Container>
 
         <Container className="space-y-4 flex flex-col items-left mb-auto pl-8">
