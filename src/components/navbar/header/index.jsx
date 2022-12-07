@@ -8,25 +8,18 @@ import Burger from '../burger'
 import Popup from '../popup'
 
 const Header = ({ links }) => {
-  const [pause, setPause] = useState(true)
   const [isOpen, setIsOpen] = useState(false)
 
-  function handleClick() {
-    if (pause) {
-      setIsOpen((isOpen) => !isOpen)
-      setTimeout(() => {
-        setPause((pause) => !pause)
-      }, 520)
-      setPause((pause) => !pause)
-    }
+  const handleClick = () => {
+    setIsOpen((isOpen) => !isOpen)
   }
 
   const variants = {
     open: {
-      left: 0,
+      top: 0,
     },
     closed: {
-      left: '-100vw',
+      top: '-100vh',
     },
   }
 
@@ -36,10 +29,10 @@ const Header = ({ links }) => {
         <Flex className="justify-between mt-[0px] ml-[40px]">
           <Container className="my-auto">
             <Link href="/">
-              <MyImage src={'/assets/immersyicon.svg'} w={42} h={42} />
+              <MyImage src={'/assets/immersyicon.svg'} w={40} h={40} />
             </Link>
           </Container>
-          <Burger pause={pause} onClick={handleClick} />
+          <Burger handleClick={handleClick} />
         </Flex>
       </Container>
 
@@ -47,7 +40,7 @@ const Header = ({ links }) => {
         initial={false}
         variants={variants}
         animate={isOpen ? 'open' : 'closed'}
-        className="min-h-screen fixed w-full  z-[98]"
+        className="min-h-screen fixed w-full z-[98]"
         transition={{
           duration: 0.5,
         }}

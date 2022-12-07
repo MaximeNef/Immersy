@@ -11,8 +11,8 @@ const Footer = ({ current }) => {
       }
       className="pt-20 pb-10"
     >
-      <Flex className=" justify-center items-center text-white">
-        <Container className="text-center flex flex-col items-left space-y-1 pl-5 ">
+      <Flex className=" text-white">
+        <Container className="text-center flex flex-col items-left space-y-1 pl-5">
           <Link href="/" className=" text-sm text-left font-light">
             Accueil
           </Link>
@@ -40,7 +40,7 @@ const Footer = ({ current }) => {
           </Link>
         </Container>
 
-        <Container className="space-y-4 flex flex-col items-left mb-auto pl-8">
+        <Container className="space-y-4 flex flex-col mb-auto pl-8">
           <p className=" text-sm text-left font-light">IMMERSY</p>
           <p className=" text-sm text-left font-light">0470/68.45.51</p>
           <div className="text-sm text-left font-light">

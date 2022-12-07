@@ -1,26 +1,104 @@
-import React from 'react'
-// import Lottie from 'react-lottie'
-import burgerMenu from '../../../../public/assets/burgermenu.json'
-
-const Burger = ({ onClick, pause }) => {
-  const defaultOptions = {
-    // name: 'menuBurger',
-    loop: true,
-    autoplay: false,
-    animationData: burgerMenu,
-    rendererSettings: {
-      preserveAspectRatio: 'xMidYMid slice',
-    },
-  }
+const Burger = ({ handleClick }) => {
   return (
-    <div onClick={onClick} className="my-auto mr-3 z-[99]">
-      {/* <Lottie
-        options={defaultOptions}
-        height={50}
-        width={50}
-        isPaused={pause}
-      /> */}
+    <div className="my-auto mr-3 z-[99]">
+      <input
+        type="checkbox"
+        id="checkbox"
+        onClick={handleClick}
+        name="burger"
+      />
+      <label className="burger" htmlFor="checkbox">
+        <div className="container top">
+          <div className="line top"></div>
+        </div>
+        <div className="container bottom">
+          <div className="line bottom"></div>
+        </div>
+      </label>
+      <style jsx>{`
+        .container.top {
+          transform: translateY(-3px) scaleX(0.88235);
+        }
+
+        .container.bottom {
+          transform: translateY(3px) scaleX(0.88235);
+        }
+
+        input:checked + label .container .line.bottom {
+          transform: rotateZ(45deg);
+        }
+
+        input:checked + label .container .line.top {
+          transform: rotateZ(-45deg);
+        }
+
+        input:checked + label .container.bottom {
+          transform: none;
+        }
+
+        input:checked + label .container.top {
+          transform: none;
+        }
+
+        input:checked + label .line.bottom {
+          transform: none;
+          transition-delay: 0.1s;
+        }
+
+        input:checked + label .line.top {
+          transform: none;
+          transition-delay: 0.1s;
+        }
+
+        .container {
+          transition: transform 0.2s ease-in-out 0.1s;
+        }
+
+        input:checked + label .container {
+          transition-delay: 0s;
+        }
+
+        .line {
+          transition: transform 0.2s ease-in-out;
+        }
+
+        /* The boilerplate stuff */
+        button {
+          all: unset;
+          cursor: pointer;
+          display: block;
+        }
+
+        button * {
+          pointer-events: none;
+        }
+
+        .burger {
+          height: 31px;
+          width: 31px;
+          display: block;
+          position: relative;
+        }
+
+        .container {
+          position: absolute;
+          left: 7px;
+          top: 15px;
+        }
+
+        .line {
+          height: 3px;
+          border-radius: 3px;
+          background: #00c9ff;
+          width: 25px;
+        }
+
+        input {
+          display: none;
+        }
+      `}</style>
     </div>
   )
 }
+
 export default Burger
