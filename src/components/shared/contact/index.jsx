@@ -4,8 +4,6 @@ import Input from '../input'
 import Title from '../title'
 
 const ContactForm = ({ data, setData, textarea }) => {
-  console.log(data, 'data')
-
   return (
     <>
       <Title mainTitle={'Recontactez-moi ici...'} />

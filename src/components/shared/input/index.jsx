@@ -1,5 +1,4 @@
 const Input = ({ data, setData, type, placeholder, name }) => {
-  console.log(data, 'data')
   const renderInput = () => {
     return (
       <input

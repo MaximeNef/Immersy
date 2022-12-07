@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import { useState } from 'react'
 import BtnStatut from '../../shared/btnStatut'
 import ContactForm from '../../shared/contact'
@@ -23,10 +24,10 @@ const TarifForm = () => {
     }))
   }
 
+  const router = useRouter()
+
   const handleSubmit = async (e) => {
     e.preventDefault()
-    console.log(form)
-
     const res = await fetch('/api/contact', {
       body: JSON.stringify({
         nom: form.nom,
@@ -42,6 +43,7 @@ const TarifForm = () => {
       },
       method: 'POST',
     })
+    router.push('/envoi')
   }
 
   return (
