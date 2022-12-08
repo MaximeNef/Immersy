@@ -9,9 +9,7 @@ const ModalForm = () => {
     mail: '',
     entreprise: '',
     tel: '',
-    selected: '',
-    nombreBiens: '',
-    superficie: '',
+    message: '',
   })
 
   const router = useRouter()
@@ -25,8 +23,8 @@ const ModalForm = () => {
         mail: form.mail,
         entreprise: form.entreprise,
         telephone: form.tel,
-        selected: form.selected,
-        nombreBiens: form.nombreBiens,
+        selected: form.nom,
+        message: form.message,
       }),
       headers: {
         'Content-Type': 'application/json',

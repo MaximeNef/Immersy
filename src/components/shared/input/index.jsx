@@ -20,10 +20,16 @@ const Input = ({ data, setData, type, placeholder, name }) => {
   const renderTextArea = () => {
     return (
       <textarea
+        name={name}
         placeholder={placeholder}
         value={data}
         onChange={(e) => {
-          setData(e.currentTarget.value)
+          const { name, value } = e.target
+
+          setData((prevData) => ({
+            ...prevData,
+            [name]: value,
+          }))
         }}
       ></textarea>
     )

@@ -23,7 +23,7 @@ const Navbar = ({ children, current }) => {
     },
     {
       page: 'Contacts',
-      href: '/contacts',
+      href: '/contact',
     },
   ])
   return (

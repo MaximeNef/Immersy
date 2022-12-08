@@ -2,6 +2,7 @@ const sgMail = require('@sendgrid/mail')
 // const { SG_API_KEY, FROM_EMAIL, TO_EMAIL } = process.env;
 sgMail.setApiKey(process.env.SG_API_KEY)
 async function sendEmail(req, res) {
+  console.log(req.body)
   try {
     await sgMail.send({
       to: 'maximenef1@gmail.com', // Your email where you'll receive emails
@@ -26,11 +27,20 @@ async function sendEmail(req, res) {
               </div>
               <div class="container" style="margin-left: 20px;margin-right: 20px;">
               <h3>Vous avez recu un e-mail de la part de :</h3>
-              <h2 style="color:blue;"> ${req.body.nom} <span>  ${req.body.prenom}</span></h2>
+              <h2 style="color:blue;"> ${req.body.nom} <span>  ${
+        req.body.prenom
+      }</span></h2>
               <h3>  Voici mon E-mail: ✉️${req.body.mail} </h3>
               <div style="font-size: 16px;">
               <p>Voici mon Numero de téléphone:</p>
               <h2 style="color:blue;">${req.body.telephone}</h2>
+              ${
+                req.body.message == undefined
+                  ? ''
+                  : `<p>Voici mon message:</p>
+              <h2 style="color:blue;">${req.body.message}</h2>`
+              }
+
               <br>
               </div>
            
