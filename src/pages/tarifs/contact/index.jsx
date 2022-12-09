@@ -43,7 +43,7 @@ const TarifContact = ({ surface }) => {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <TitreTarifs surfaceInfo={surfaceInfo} />
-        <TarifForm />
+        <TarifForm surfaceInfo={surfaceInfo} />
       </Navbar>
     </div>
   )

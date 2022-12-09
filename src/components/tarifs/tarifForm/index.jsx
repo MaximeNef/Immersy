@@ -5,7 +5,7 @@ import ContactForm from '../../shared/contact'
 import Input from '../../shared/input'
 import Title from '../../shared/title'
 
-const TarifForm = () => {
+const TarifForm = ({ surfaceInfo }) => {
   const [form, setForm] = useState({
     nom: '',
     prenom: '',
@@ -37,6 +37,7 @@ const TarifForm = () => {
         telephone: form.tel,
         selected: form.selected,
         nombreBiens: form.nombreBiens,
+        surfaceInfo: surfaceInfo,
       }),
       headers: {
         'Content-Type': 'application/json',

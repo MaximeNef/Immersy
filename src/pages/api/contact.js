@@ -2,12 +2,12 @@ const sgMail = require('@sendgrid/mail')
 // const { SG_API_KEY, FROM_EMAIL, TO_EMAIL } = process.env;
 sgMail.setApiKey(process.env.SG_API_KEY)
 async function sendEmail(req, res) {
-  console.log(req.body)
+  console.log(req.body.surfaceInfo.title)
   try {
     await sgMail.send({
       to: 'maximenef1@gmail.com', // Your email where you'll receive emails
       from: 'immersy.info@gmail.com', // your website email address here
-      subject: `${req.body.selected}`,
+      subject: `un "${req.body.selected}"  pour une ${req.body.surfaceInfo.title} ${req.body.surfaceInfo.subTitle} M2 `,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="en">
       <head>
@@ -26,19 +26,19 @@ async function sendEmail(req, res) {
         <div class="img-container" style="display: flex;justify-content: center;align-items: center;border-radius: 5px;overflow: hidden; font-family: 'helvetica', 'ui-sans';">              
               </div>
               <div class="container" style="margin-left: 20px;margin-right: 20px;">
-              <h3>Vous avez recu un e-mail de la part de :</h3>
-              <h2 style="color:blue;"> ${req.body.nom} <span>  ${
+              <h2>Vous avez recu un e-mail de la part de :</h2>
+              <p style="color:blue;"> ${req.body.nom} <span>  ${
         req.body.prenom
-      }</span></h2>
-              <h3>  Voici mon E-mail: ✉️${req.body.mail} </h3>
+      }</span></p>
+              <p>  Voici mon E-mail: ✉️${req.body.mail} </p>
               <div style="font-size: 16px;">
-              <p>Voici mon Numero de téléphone:</p>
-              <h2 style="color:blue;">${req.body.telephone}</h2>
+              <h2>Voici mon Numero de téléphone:</h2>
+              <p style="color:blue;">${req.body.telephone}</p>
               ${
                 req.body.message == undefined
                   ? ''
-                  : `<p>Voici mon message:</p>
-              <h2 style="color:blue;">${req.body.message}</h2>`
+                  : `<h2>Voici mon message:</h2>
+              <p style="color:blue;">${req.body.message}</p>`
               }
 
               <br>
