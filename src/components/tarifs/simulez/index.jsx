@@ -40,7 +40,7 @@ const Simulez = () => {
     <div className="mt-12 mx-5">
       <Title mainTitle="Simulez votre tarif" subTitle="prix indicatif" />
       <div className="text-center w-full mt-12 mb-6">
-        <Title mainTitle={`Tarif estimé : ${prix} €`} />
+        <h2 className="text-xl font-thin">{`Tarif estimé : ${prix} €`}</h2>
       </div>
       <input
         value={meter}
