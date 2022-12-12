@@ -7,18 +7,22 @@ const ContactForm = ({ data, setData, textarea, selected }) => {
   return (
     <>
       <Title mainTitle={'Recontactez-moi ici ...'} />
+
       <div className="space-y-5 mt-[40px]">
         <Flex className={'space-x-2'}>
           <Input
             placeholder={'Prénom*'}
-            type="input"
+            elementType={'input'}
+            required
             data={data.prenom}
             setData={setData}
             name="prenom"
           />
+
           <Input
             placeholder={'Nom*'}
-            type="input"
+            elementType={'input'}
+            required
             data={data.nom}
             setData={setData}
             name="nom"
@@ -26,7 +30,9 @@ const ContactForm = ({ data, setData, textarea, selected }) => {
         </Flex>
         <Input
           placeholder={'Email*'}
-          type="input"
+          elementType={'input'}
+          required
+          inputType={'email'}
           data={data.mail}
           setData={setData}
           name="mail"
@@ -34,7 +40,7 @@ const ContactForm = ({ data, setData, textarea, selected }) => {
         {selected == 'Professionel' ? (
           <Input
             placeholder={'Nom d’entreprise'}
-            type="input"
+            elementType={'input'}
             data={data.entreprise}
             setData={setData}
             name="entreprise"
@@ -42,7 +48,8 @@ const ContactForm = ({ data, setData, textarea, selected }) => {
         ) : null}
         <Input
           placeholder={'Téléphone'}
-          type="input"
+          elementType={'input'}
+          inputType={'number'}
           data={data.tel}
           setData={setData}
           name="tel"
@@ -50,7 +57,7 @@ const ContactForm = ({ data, setData, textarea, selected }) => {
         {textarea ? (
           <Input
             placeholder={'Votre question / message'}
-            type="textarea"
+            elementType="textarea"
             data={data.message}
             setData={setData}
             name="message"

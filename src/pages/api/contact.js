@@ -9,7 +9,7 @@ async function sendEmail(req, res) {
       subject: `${
         req.body.surfaceInfo == undefined
           ? 'Une personne vous contacte avec les informations suivantes'
-          : `Un "${req.body.selected}" vous contacte pour une ${req.body.surfaceInfo.title} ${req.body.surfaceInfo.subTitle} m²`
+          : `Un "${req.body.selected}" vous contacte pour une demande de tarif concernant une ${req.body.surfaceInfo.title} ${req.body.surfaceInfo.subTitle} m²`
       }`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="en">
@@ -36,10 +36,10 @@ async function sendEmail(req, res) {
               <h2>  Voici mon E-mail :  </h2>
               <p style="color:blue;">✉️${req.body.mail}</p>
 
-              <h2>Voici mon Numero de téléphone:</h2>
+              <h2>Voici mon Numero de téléphone :</h2>
               <p style="color:blue;">${req.body.telephone}</p>
               ${
-                req.body.entreprise == ''
+                req.body.entreprise == '' || req.body.entreprise == undefined
                   ? ''
                   : `<h2>Voici mon entreprise :</h2>
               <p style="color:blue;">${req.body.entreprise}</p>`
@@ -50,10 +50,21 @@ async function sendEmail(req, res) {
                   : `<h2>Voici mon message :</h2>
               <p style="color:blue;">${req.body.message}</p>`
               }
+              ${
+                req.body.nombreBiens == '' || req.body.nombreBiens == undefined
+                  ? ''
+                  : `<h2>Nombres de biens :</h2>
+              <p style="color:blue;">${req.body.nombreBiens}</p>`
+              }
+              ${
+                req.body.superficie == '' || req.body.superficie == undefined
+                  ? ''
+                  : `<h2>Superficie totale :</h2>
+              <p style="color:blue;">${req.body.superficie}</p>`
+              }
 
               <br>
-              
-           
+
               </div>
       </body>
       </html>`,

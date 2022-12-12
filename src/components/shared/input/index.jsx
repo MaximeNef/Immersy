@@ -1,19 +1,45 @@
-const Input = ({ data, setData, type, placeholder, name }) => {
+import { useState } from 'react'
+
+const Input = ({
+  data,
+  setData,
+  elementType,
+  placeholder,
+  name,
+  required,
+  inputType,
+}) => {
+  const [showInputError, setShowInputError] = useState(false)
+
   const renderInput = () => {
     return (
-      <input
-        name={name}
-        placeholder={placeholder}
-        value={data}
-        onChange={(e) => {
-          const { name, value } = e.target
-
-          setData((prevData) => ({
-            ...prevData,
-            [name]: value,
-          }))
-        }}
-      />
+      <div>
+        <input
+          name={name}
+          placeholder={placeholder}
+          value={data}
+          required={required}
+          type={inputType}
+          className="peer"
+          onChange={(e) => {
+            const { name, value } = e.target
+            setData((prevData) => ({
+              ...prevData,
+              [name]: value,
+            }))
+          }}
+          onBlur={() => {
+            setShowInputError(true)
+          }}
+        />
+        <p
+          className={`hidden text-red-700 text-sm font-light my-0 ${
+            showInputError ? 'peer-invalid:block' : ''
+          }`}
+        >
+          Please enter your name
+        </p>
+      </div>
     )
   }
 
@@ -35,7 +61,7 @@ const Input = ({ data, setData, type, placeholder, name }) => {
     )
   }
 
-  return <>{type === 'input' ? renderInput() : renderTextArea()}</>
+  return <>{elementType === 'input' ? renderInput() : renderTextArea()}</>
 }
 
 export default Input

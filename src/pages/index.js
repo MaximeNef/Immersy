@@ -8,21 +8,6 @@ import Navbar from '../components/navbar'
 import BottomSection from '../components/homepage/bottomSection'
 
 export default function Home() {
-  // const informations = [
-  //   {
-  //     text: 'Visite virtuelle en 3D',
-  //   },
-  //   {
-  //     text: 'Visite virtuelle en 3D',
-  //   },
-  //   {
-  //     text: 'Visite virtuelle en 3D',
-  //   },
-  //   {
-  //     text: 'Visite virtuelle en 3D',
-  //   },
-  // ]
-
   return (
     <Navbar>
       <Head>

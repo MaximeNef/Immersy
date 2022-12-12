@@ -7,7 +7,6 @@ const ModalForm = () => {
     nom: '',
     prenom: '',
     mail: '',
-    entreprise: '',
     tel: '',
     message: '',
   })
@@ -21,7 +20,6 @@ const ModalForm = () => {
         nom: form.nom,
         prenom: form.prenom,
         mail: form.mail,
-        entreprise: form.entreprise,
         telephone: form.tel,
         selected: form.nom,
         message: form.message,

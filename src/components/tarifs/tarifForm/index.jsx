@@ -37,6 +37,7 @@ const TarifForm = ({ surfaceInfo }) => {
         telephone: form.tel,
         selected: form.selected,
         nombreBiens: form.nombreBiens,
+        superficie: form.superficie,
         surfaceInfo: surfaceInfo,
       }),
       headers: {
@@ -71,7 +72,8 @@ const TarifForm = ({ surfaceInfo }) => {
           </div>
           <Input
             placeholder={'Nombre de biens à virtualiser'}
-            type="input"
+            elementType="input"
+            inputType="number"
             data={form.nombreBiens}
             setData={setForm}
             name="nombreBiens"
@@ -83,7 +85,8 @@ const TarifForm = ({ surfaceInfo }) => {
           </div>
           <Input
             placeholder={'Nombre de m²'}
-            type="input"
+            elementType="input"
+            inputType="number"
             data={form.superficie}
             setData={setForm}
             name="superficie"
