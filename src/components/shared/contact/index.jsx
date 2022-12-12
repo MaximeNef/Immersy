@@ -3,10 +3,10 @@ import FormSubmitBtn from '../formSubmitBtn'
 import Input from '../input'
 import Title from '../title'
 
-const ContactForm = ({ data, setData, textarea }) => {
+const ContactForm = ({ data, setData, textarea, selected }) => {
   return (
     <>
-      <Title mainTitle={'Recontactez-moi ici...'} />
+      <Title mainTitle={'Recontactez-moi ici ...'} />
       <div className="space-y-5 mt-[40px]">
         <Flex className={'space-x-2'}>
           <Input
@@ -31,13 +31,15 @@ const ContactForm = ({ data, setData, textarea }) => {
           setData={setData}
           name="mail"
         />
-        <Input
-          placeholder={'Nom d’entreprise'}
-          type="input"
-          data={data.entreprise}
-          setData={setData}
-          name="entreprise"
-        />
+        {selected == 'Professionel' ? (
+          <Input
+            placeholder={'Nom d’entreprise'}
+            type="input"
+            data={data.entreprise}
+            setData={setData}
+            name="entreprise"
+          />
+        ) : null}
         <Input
           placeholder={'Téléphone'}
           type="input"

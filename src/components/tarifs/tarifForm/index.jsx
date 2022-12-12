@@ -89,7 +89,12 @@ const TarifForm = ({ surfaceInfo }) => {
             name="superficie"
           />
         </div>
-        <ContactForm data={form} setData={setForm} textarea={false} />
+        <ContactForm
+          data={form}
+          setData={setForm}
+          textarea={false}
+          selected={form.selected}
+        />
       </form>
     </div>
   )

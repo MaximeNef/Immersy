@@ -2,12 +2,11 @@ const sgMail = require('@sendgrid/mail')
 // const { SG_API_KEY, FROM_EMAIL, TO_EMAIL } = process.env;
 sgMail.setApiKey(process.env.SG_API_KEY)
 async function sendEmail(req, res) {
-  console.log(req.body.surfaceInfo.title)
   try {
     await sgMail.send({
-      to: 'maximenef1@gmail.com', // Your email where you'll receive emails
+      to: 'felicien.dehertogh@gmail.com', // Your email where you'll receive emails
       from: 'immersy.info@gmail.com', // your website email address here
-      subject: `un "${req.body.selected}"  pour une ${req.body.surfaceInfo.title} ${req.body.surfaceInfo.subTitle} M2 `,
+      subject: `Un "${req.body.selected}" pour une ${req.body.surfaceInfo.title} ${req.body.surfaceInfo.subTitle} m²`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="en">
       <head>
@@ -25,15 +24,22 @@ async function sendEmail(req, res) {
       <body>
         <div class="img-container" style="display: flex;justify-content: center;align-items: center;border-radius: 5px;overflow: hidden; font-family: 'helvetica', 'ui-sans';">              
               </div>
-              <div class="container" style="margin-left: 20px;margin-right: 20px;">
+              <div class="container" style="margin-left: 20px;margin-right: 20px; font-size: 16px;">
               <h2>Vous avez recu un e-mail de la part de :</h2>
-              <p style="color:blue;"> ${req.body.nom} <span>  ${
+              <p style="color:blue; "> ${req.body.nom} <span>  ${
         req.body.prenom
       }</span></p>
-              <p>  Voici mon E-mail: ✉️${req.body.mail} </p>
-              <div style="font-size: 16px;">
+              <h2>  Voici mon E-mail:  </h2>
+              <p style="color:blue;">✉️${req.body.mail}</p>
+
               <h2>Voici mon Numero de téléphone:</h2>
               <p style="color:blue;">${req.body.telephone}</p>
+              ${
+                req.body.entreprise == undefined
+                  ? ''
+                  : `<h2>Voici mon entreprise:</h2>
+              <p style="color:blue;">${req.body.entreprise}</p>`
+              }
               ${
                 req.body.message == undefined
                   ? ''
@@ -42,7 +48,7 @@ async function sendEmail(req, res) {
               }
 
               <br>
-              </div>
+              
            
               </div>
       </body>
@@ -57,26 +63,3 @@ async function sendEmail(req, res) {
 }
 
 export default sendEmail
-
-// export default async function handler(req, res) {
-//   const { nom, prenom, mail, telephone } = req.body;
-//   const msg = {
-//     to: "maximenef1@gmail.com",
-//     from: "barbiere@listri.digital",
-//     subject: "formulaire immo",
-//     html: `<p> ${nom} ${prenom} ${mail} ${telephone} </p> `,
-//   };
-//   await sgMail.send(msg);
-//   res.json({ succes: true });
-// }
-
-// try {
-//   await mail.send(data);
-//   res.status(200).json({ status: "OK" });
-// } catch (error) {
-//   console.log(error);
-//   if (error.response) {
-//     console.log(error.response.body);
-//   }
-//   res.status(400).json({ status: "ERROR", message: error.message });
-// }
