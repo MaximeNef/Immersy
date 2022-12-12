@@ -66,7 +66,7 @@ const TarifForm = () => {
         </div>
         <div className="mb-[30px]">
           <div className="mb-5">
-            <Title mainTitle="Nombres de biens..." />
+            <Title mainTitle="Nombres de biens ..." />
           </div>
           <Input
             placeholder={'Nombre de biens à virtualiser'}
@@ -78,7 +78,7 @@ const TarifForm = () => {
         </div>
         <div className="mb-10">
           <div className="mb-5">
-            <Title mainTitle="Superficie totale..." />
+            <Title mainTitle="Superficie totale ..." />
           </div>
           <Input
             placeholder={'Nombre de m²'}
