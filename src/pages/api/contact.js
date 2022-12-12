@@ -6,7 +6,11 @@ async function sendEmail(req, res) {
     await sgMail.send({
       to: 'felicien.dehertogh@gmail.com', // Your email where you'll receive emails
       from: 'immersy.info@gmail.com', // your website email address here
-      subject: `Un "${req.body.selected}" pour une ${req.body.surfaceInfo.title} ${req.body.surfaceInfo.subTitle} m²`,
+      subject: `${
+        req.body.surfaceInfo == undefined
+          ? 'Une personne vous contacte avec les informations suivantes'
+          : `Un "${req.body.selected}" vous contacte pour une ${req.body.surfaceInfo.title} ${req.body.surfaceInfo.subTitle} m²`
+      }`,
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
       <html lang="en">
       <head>
@@ -29,21 +33,21 @@ async function sendEmail(req, res) {
               <p style="color:blue; "> ${req.body.nom} <span>  ${
         req.body.prenom
       }</span></p>
-              <h2>  Voici mon E-mail:  </h2>
+              <h2>  Voici mon E-mail :  </h2>
               <p style="color:blue;">✉️${req.body.mail}</p>
 
               <h2>Voici mon Numero de téléphone:</h2>
               <p style="color:blue;">${req.body.telephone}</p>
               ${
-                req.body.entreprise == undefined
+                req.body.entreprise == ''
                   ? ''
-                  : `<h2>Voici mon entreprise:</h2>
+                  : `<h2>Voici mon entreprise :</h2>
               <p style="color:blue;">${req.body.entreprise}</p>`
               }
               ${
                 req.body.message == undefined
                   ? ''
-                  : `<h2>Voici mon message:</h2>
+                  : `<h2>Voici mon message :</h2>
               <p style="color:blue;">${req.body.message}</p>`
               }
 
