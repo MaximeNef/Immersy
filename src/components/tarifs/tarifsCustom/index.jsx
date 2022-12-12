@@ -9,7 +9,7 @@ const TarifsCustom = () => {
         <Title mainTitle="Nos tarifs" subTitle="un avantage sur-mesure" />
       </div>
       <div className="mt-12">
-        <Title mainTitle="Tarifs par superficie" />
+        <h2 className="text-xl">Tarifs par superficie</h2>
       </div>
       <div className="mt-12">
         <PricingCards />
