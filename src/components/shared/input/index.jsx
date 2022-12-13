@@ -8,6 +8,7 @@ const Input = ({
   name,
   required,
   inputType,
+  inputError,
 }) => {
   const [showInputError, setShowInputError] = useState(false)
 
@@ -33,11 +34,11 @@ const Input = ({
           }}
         />
         <p
-          className={`hidden text-red-700 text-sm font-light my-0 ${
+          className={`hidden text-red-700 text-xs font-light my-0 ${
             showInputError ? 'peer-invalid:block' : ''
           }`}
         >
-          Please enter your name
+          {inputError}
         </p>
       </div>
     )

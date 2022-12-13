@@ -17,6 +17,7 @@ const ContactForm = ({ data, setData, textarea, selected }) => {
             data={data.prenom}
             setData={setData}
             name="prenom"
+            inputError="Veuillez entrer votre prénom"
           />
 
           <Input
@@ -26,6 +27,7 @@ const ContactForm = ({ data, setData, textarea, selected }) => {
             data={data.nom}
             setData={setData}
             name="nom"
+            inputError="Veuillez entrer votre nom"
           />
         </Flex>
         <Input
@@ -36,6 +38,7 @@ const ContactForm = ({ data, setData, textarea, selected }) => {
           data={data.mail}
           setData={setData}
           name="mail"
+          inputError="Veuillez entrer une adresse email valide"
         />
         {selected == 'Professionel' ? (
           <Input
