@@ -4,7 +4,7 @@ sgMail.setApiKey(process.env.SG_API_KEY)
 async function sendEmail(req, res) {
   try {
     await sgMail.send({
-      to: 'felicien.dehertogh@gmail.com', // Your email where you'll receive emails
+      to: 'maximenef1@gmail.com', // Your email where you'll receive emails
       from: 'immersy.info@gmail.com', // your website email address here
       subject: `${
         req.body.surfaceInfo == undefined

@@ -16,7 +16,11 @@ const Projet = ({ current, blue }) => {
         }
       />
       <div className="pt-10 pb-16">
-        <Btn1 text={'Contact'} link={'/'} colorBg={`${blue ? null : 'blue'}`} />
+        <Btn1
+          text={'Contact'}
+          link={'/contact'}
+          colorBg={`${blue ? null : 'blue'}`}
+        />
       </div>
     </div>
   )
