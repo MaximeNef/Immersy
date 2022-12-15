@@ -10,11 +10,11 @@ const AvantageItems = ({ avantages, color }) => {
     AOS.init({ offset: 10, once: true })
   }, [])
   return (
-    <div>
+    <div className="md:flex md:justify-between ">
       {avantages.map((avantage, i) => {
         return (
           <div data-aos="fade-right" key={i}>
-            <Flex className="my-[40px]">
+            <Flex className="my-[40px] md:flex-col md:items-center md:text-center md:w-[200px] lg:w-[280px] 2xl:w-[350px]">
               <Container className="w-fit mr-[25px]">
                 <MyImage src={avantage.img} w={50} h={50} />
               </Container>

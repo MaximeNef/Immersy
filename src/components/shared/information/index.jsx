@@ -10,10 +10,10 @@ const Information = ({ infos }) => {
     AOS.init({ once: true })
   }, [])
   return (
-    <div className=" md:flex md:flex-row md:flex-wrap">
+    <div className=" sm:flex sm:flex-row sm:flex-wrap">
       {infos.map((info, index) => {
         return (
-          <div key={index} data-aos="fade-up" className="md: w-1/2">
+          <div key={index} data-aos="fade-up" className="sm:w-1/2">
             <Flex className="my-2">
               <Container className="w-fit mr-4">
                 <MyImage src={'/assets/immersyicon.svg'} w={23} h={23} />
