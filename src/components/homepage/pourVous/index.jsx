@@ -10,21 +10,26 @@ const PourVous = () => {
     { text: 'Photos 360°' },
     { text: 'Plan schématique 2D' },
     { text: 'Intégration de la visite à votre site web' },
+    { text: 'Outil de mesure de l’espace 3D' },
   ]
   return (
-    <div className="mx-5 space-y-[50px] mb-5 mt-20">
+    <div className="mx-5 md:mx-20 mb-[170px] mt-20">
       <Title
         color={'black'}
         mainTitle={'Pour vous'}
         subTitle={'nous faisons ce qu’il faut'}
       />
-      <Description
-        color="black"
-        text={
-          'Chaque collaboration est unique, c’est pourquoi notre objectif est de vous apporter exactement ce dont vous avez besoin. '
-        }
-      />
-      <Information infos={infos} />
+      <div className="my-[50px] sm:mt-[90px]">
+        <Description
+          color="black"
+          text={
+            'Chaque collaboration est unique, c’est pourquoi notre objectif est de vous apporter exactement ce dont vous avez besoin.'
+          }
+        />
+      </div>
+      <div className="mb-[90px]">
+        <Information infos={infos} />
+      </div>
       <Btn1 link={'/services'} colorBg={'blue'} text={'Nos services'} />
     </div>
   )

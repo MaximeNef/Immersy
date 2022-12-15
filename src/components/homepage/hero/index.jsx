@@ -4,7 +4,7 @@ import MyImage from '../../shared/myimage'
 const Hero = () => {
   return (
     <Container className="w-full h-screen mb-[-120px]">
-      <MyImage src="/assets/home.png" layout="fill" />
+      <MyImage src="/assets/home_picture_desktop.png" layout="fill" />
       <div id="clip" className="w-full h-28 absolute bottom-0" />
       <div
         className="absolute bottom-3  left-1/2 transform -translate-x-1/2 -translate-y-1/2
