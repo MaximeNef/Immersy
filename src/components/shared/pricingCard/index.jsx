@@ -33,7 +33,7 @@ const PricingCards = () => {
   }, [])
 
   return (
-    <Container className="w-full">
+    <Container className="w-full xl:flex xl:flex-row xl:justify-between">
       {surfaces.map((surface, index) => {
         return (
           <div data-aos="fade-right" key={index}>
@@ -43,7 +43,7 @@ const PricingCards = () => {
                 query: { surface: surface.query },
               }}
             >
-              <Container className="bg-[#1A2341]  my-2 text-white text-center rounded-xl border-[1px] border-white py-5 relative space-y-2">
+              <Container className="bg-[#1A2341]  my-2 text-white text-center rounded-xl border-[1px] border-white py-5 relative space-y-2 xl:w-[350px] xl:h-[140px]">
                 <Container className="w-fit absolute top-5 left-5">
                   <MyImage
                     alt="surface icon"
