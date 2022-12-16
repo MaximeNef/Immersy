@@ -10,7 +10,7 @@ const AvantageItems = ({ avantages, color }) => {
     AOS.init({ offset: 10, once: true })
   }, [])
   return (
-    <div className="md:flex md:justify-between ">
+    <div className="md:flex md:justify-between md:flex-wrap md:space-x-10 ">
       {avantages.map((avantage, i) => {
         return (
           <div data-aos="fade-right" key={i}>
