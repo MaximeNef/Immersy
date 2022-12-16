@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import Title from '../../../components/shared/title'
-import CarteContact from '../../shared/cartecontact'
+import CarteContact from '../../shared/carteContact'
 const ContactezNous = ({ isSelected, setIsSelected }) => {
   const router = useRouter()
 

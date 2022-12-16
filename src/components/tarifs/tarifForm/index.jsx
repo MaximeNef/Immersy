@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import { useState } from 'react'
-import CarteContact from '../../shared/cartecontact'
+import CarteContact from '../../shared/carteContact'
 import ContactForm from '../../shared/contact'
 import Input from '../../shared/input'
 import Title from '../../shared/title'
