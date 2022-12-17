@@ -14,7 +14,7 @@ const PourVous = () => {
     { text: 'Outil de mesure de l’espace 3D' },
   ]
   return (
-    <div className="mx-5 mb-[50px] md:mb-[170px] mt-20  md:mx-auto   ">
+    <div className="mx-5 md:mx-20 mb-[50px] md:mb-[170px] mt-20     ">
       <Title
         color={'black'}
         mainTitle={'Pour vous'}
@@ -29,7 +29,7 @@ const PourVous = () => {
           }
         />
       </div>
-      <div className="mb-[70px] md:mb-[90px] ">
+      <div className="mb-[70px] md:mb-[90px]  ">
         <Information infos={infos} />
       </div>
       <Btn1 link={'/services'} colorBg={'blue'} text={'Nos services'} />

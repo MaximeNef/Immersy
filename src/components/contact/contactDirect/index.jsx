@@ -2,7 +2,7 @@ import Title from '../../shared/title'
 
 const ContactDirect = () => {
   return (
-    <div className="mx-5 mb-[50px]">
+    <div className="mx-5 mb-[50px] md:text-center">
       <div className="mb-5">
         <h2 className="text-xl">Contact en direct</h2>
         <div className="mt-10 space-y-2">

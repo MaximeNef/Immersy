@@ -5,31 +5,41 @@ import MyImage from '../myimage'
 
 const RealisationCards = () => {
   return (
-    <Container className="space-y-[50px]">
+    <Container className="space-y-[50px] md:flex  md:flex-row md:space-y-0 md:justify-start">
       <Container
         className={
-          '  bg-gradient-to-b from-white to-[#1A2341]   shadow-2xl rounded-[10px] h-[225px] relative  z-30 '
+          ' shadow-2xl rounded-[10px] h-[225px] md:h-[350px] relative  z-30 md:w-1/2 md:mr-10'
         }
       >
-        {' '}
         <MyImage
           src="/assets/immersyVr.png"
           layout={'fill'}
-          className="z-[-30]  bg-gradient-to-b from-white to-[#1A2341] "
+          objectFit="cover"
+          className=" rounded-[10px] "
         />
-        <Flex className={'flex-col justify-center z-10  '}>
+        <Flex
+          className={
+            'flex-col justify-center z-10 bg-gradient-to-b from-black/0 to-[#1A2341] rounded-[10px]'
+          }
+        >
           <MyImage src="/assets/Play.svg" w={50} h={50} className="mx-auto " />
           <p className="text-white	 text-center text-[20px] font-bold 	">
             Théophile & Patachou
           </p>
         </Flex>{' '}
       </Container>
+
       <Container
         className={
-          '  bg-gradient-to-b from-white to-[#1A2341]   shadow-2xl rounded-[10px] h-[225px] z-10 relative '
+          ' md:w-1/2 md:ml-10  bg-gradient-to-b from-white to-[#1A2341]   shadow-2xl rounded-[10px] h-[225px] md:h-[350px] z-10 relative '
         }
       >
-        <div className="rounded-[10px] h-[225px] blur-sm w-full z-20 absolute  bg-gradient-to-b from-wh" />
+        <MyImage
+          src="/assets/immersyVr.png"
+          layout={'fill'}
+          className=" rounded-[10px] "
+        />
+        <div className="rounded-[10px] h-[225px] blur-sm w-full z-20 absolute  bg-gradient-to-b from-black/0 to-[#1A2341] md:h-[350px]" />
         <Flex className={'flex-col justify-center   '}>
           <MyImage
             src="/assets/Play.svg"
@@ -38,7 +48,7 @@ const RealisationCards = () => {
             className="mx-auto z-30"
           />
           <p className="text-white	 text-center text-[20px] font-bold z-[20]	">
-            vootre projet{' '}
+            votre projet{' '}
           </p>
         </Flex>
       </Container>

@@ -14,7 +14,7 @@ const ContactezNous = ({ isSelected, setIsSelected }) => {
 
   return (
     <div className="mt-32 mx-5">
-      <div className="mb-5">
+      <div className="mb-5 md:text-center">
         <Title mainTitle="Contactez-nous" subTitle="et laissez vous guider" />
       </div>
       <div className="space-y-[20px] mb-[50px]">

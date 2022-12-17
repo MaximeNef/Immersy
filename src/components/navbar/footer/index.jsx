@@ -40,7 +40,7 @@ const Footer = ({ current }) => {
           </Link>
         </Container>
 
-        <Container className="space-y-4 flex flex-col mb-auto pl-8">
+        <Container className="space-y-4 flex flex-col mb-auto pl-8 md:flex md:flex-col md:items-end md:mr-5">
           <p className=" text-sm text-left font-light">IMMERSY</p>
           <p className=" text-sm text-left font-light">0470/68.45.51</p>
           <div className="text-sm text-left font-light">

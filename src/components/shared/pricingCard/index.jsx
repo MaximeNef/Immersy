@@ -43,7 +43,7 @@ const PricingCards = () => {
                 query: { surface: surface.query },
               }}
             >
-              <Container className="bg-[#1A2341]  my-2 text-white text-center rounded-xl border-[1px] border-white py-5 relative space-y-2 xl:w-[350px] xl:h-[140px]">
+              <Container className="bg-[#1A2341]  my-2 text-white text-center rounded-xl border-[1px] border-white py-5 relative space-y-2 xl:w-[350px] transform transition duration-500 md:hover:scale-110 hover:shadow-lg md:hover:shadow-blue-500">
                 <Container className="w-fit absolute top-5 left-5">
                   <MyImage
                     alt="surface icon"
