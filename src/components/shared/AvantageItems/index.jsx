@@ -10,19 +10,23 @@ const AvantageItems = ({ avantages, color }) => {
     AOS.init({ offset: 10, once: true })
   }, [])
   return (
-    <div className="md:flex md:justify-between md:flex-wrap md:space-x-10 ">
+    <div className="md:flex md:justify-center md:flex-wrap md:space-x-10 ">
       {avantages.map((avantage, i) => {
         return (
-          <div data-aos="fade-right" key={i}>
-            <Flex className="my-[40px] md:flex-col md:items-center md:text-center md:w-[200px] lg:w-[280px] 2xl:w-[350px]">
-              <Container className="w-fit mr-[25px]">
+          <div data-aos="fade-right" key={i} className="">
+            <Flex
+              className={`my-[40px] md:flex-col md:items-center md:text-center md:w-[200px] lg:w-[280px] 2xl:w-[350px]  ${
+                i == 1 ? ' md:scale-150 md:px-10 ' : ''
+              }`}
+            >
+              <Container className="w-fit  mr-[25px] md:mr-0 md:mb-3">
                 <MyImage src={avantage.img} w={50} h={50} />
               </Container>
               <Container className={`${color}`}>
                 <p className="mb-1 font-medium tracking-standard text-[20px] ">
                   {avantage.title}
                 </p>
-                <p className=" font-light tracking-standard text-[15px] leading-[22px] ">
+                <p className=" font-light tracking-standard text-[15px] leading-[22px] md:px-5 ">
                   {avantage.subtitle}
                 </p>
               </Container>

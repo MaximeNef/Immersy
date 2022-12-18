@@ -28,10 +28,12 @@ const Realisation = () => {
           mainTitle={'Votre réalisation'}
           subTitle={'ce que nous faisons de mieux'}
         />
+      </div>{' '}
+      <div className="md:flex md:flex-row ">
+        {realisations.map((item, i) => {
+          return <ProjetCards key={i} item={item} />
+        })}{' '}
       </div>
-      {realisations.map((item, i) => {
-        return <ProjetCards key={i} item={item} />
-      })}
     </Container>
   )
 }

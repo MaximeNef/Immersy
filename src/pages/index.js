@@ -18,10 +18,8 @@ export default function Home() {
       </Head>
 
       <Hero />
-      {/* New commit debug  */}
       <PourVous />
       <Avantages />
-
       <Realisation />
       <Tarif />
       <BottomSection />

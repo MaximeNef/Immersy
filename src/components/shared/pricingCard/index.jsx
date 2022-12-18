@@ -33,17 +33,23 @@ const PricingCards = () => {
   }, [])
 
   return (
-    <Container className="w-full xl:flex xl:flex-row xl:justify-between">
+    <Container className="w-full xl:flex xl:flex-row md:justify-center ">
       {surfaces.map((surface, index) => {
         return (
-          <div data-aos="fade-right" key={index}>
+          <div data-aos="fade-right" key={index} className="md:mx-10">
             <Link
               href={{
                 pathname: 'tarifs/contact',
                 query: { surface: surface.query },
               }}
             >
-              <Container className="bg-[#1A2341]  my-2 text-white text-center rounded-xl border-[1px] border-white py-5 relative space-y-2 xl:w-[350px] transform transition duration-500 md:hover:scale-110 hover:shadow-lg md:hover:shadow-blue-500">
+              <Container
+                className={`bg-[#1A2341]  my-2 text-white text-center rounded-xl border-[1px] border-white md:border-white/0 py-5 relative space-y-2 xl:w-[350px] transform transition duration-500 md:hover:scale-110 hover:shadow-lg md:hover:shadow-blue-500   ${
+                  index == 1
+                    ? 'md:scale-110 md:shadow-btn md:shadow-white/20 md:hover:scale-125 md:hover:border-white  '
+                    : ' md:shadow-btn md:shadow-white/20 md:hover:border-white '
+                }   `}
+              >
                 <Container className="w-fit absolute top-5 left-5">
                   <MyImage
                     alt="surface icon"
@@ -54,16 +60,28 @@ const PricingCards = () => {
                 </Container>
                 <Container>
                   <h2 className="text-xl w-full">{surface.type}</h2>
-                </Container>
-                <Flex>
-                  <p className=" text-[20px] w-full font-light tracking-standard">
-                    {surface.surface} M&#178;
+                  <p className="hidden md:inline-flex  mx-5 my-10 font-extralight text-[14px] leading-7">
+                    {
+                      '   Cet formule est parfaite pour les établissements de petite et moyenne taille, tels que les restaurants, les cafés, les bars, les hôtels, les épiceries, etc'
+                    }
                   </p>
-                  <div className="text-2xl absolute right-6">&rarr;</div>
-                </Flex>
-                <p className=" text-[15px] w-full font-light">
-                  {surface.price}/M&#178;
-                </p>
+
+                  <Flex className="my-2">
+                    <p className=" text-[20px] w-full font-light tracking-standard">
+                      {surface.surface} M&#178;
+                    </p>
+                    <div className="text-2xl absolute right-6 md:hidden inline-flex">
+                      &rarr;
+                    </div>
+                  </Flex>
+
+                  <div className=" text-[15px] w-full font-light md:mb-10 ">
+                    {surface.price}/M&#178;
+                  </div>
+                </Container>
+                <div className="hidden md:inline-flex bg-white  mx-5 rounded-[10px] px-auto py-2 mt-20 text-black">
+                  <p className=" mx-auto"> Découvrir </p>
+                </div>
               </Container>
             </Link>
           </div>

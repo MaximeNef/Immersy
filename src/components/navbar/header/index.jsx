@@ -6,6 +6,7 @@ import Flex from '../../shared/flex'
 import MyImage from '../../shared/myimage'
 import Burger from '../burger'
 import Popup from '../popup'
+import MenuDesktop from './MenuDesktop'
 
 const Header = ({ links }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -25,14 +26,19 @@ const Header = ({ links }) => {
 
   return (
     <>
-      <Container className="z-[99] fixed backdrop-blur bg-white bg-opacity-40 bg-clip-padding py-1">
-        <Flex className="justify-between mt-[0px] ml-[40px]">
-          <Container className="my-auto">
+      <Container className="z-[99] fixed backdrop-blur bg-white md:bg-opacity-60 bg-opacity-40 bg-clip-padding py-1">
+        <Flex className="justify-between mt-[0px] ml-[40px] md:mr-[40px] md:items-center">
+          <Container className="my-auto md:w-fit">
             <Link href="/">
               <MyImage src={'/assets/immersyicon.svg'} w={40} h={40} />
             </Link>
           </Container>
-          <Burger handleClick={handleClick} />
+          <div className="inline-flex md:hidden">
+            <Burger handleClick={handleClick} />
+          </div>
+          <div className="md:inline-flex hidden">
+            <MenuDesktop links={links} />
+          </div>
         </Flex>
       </Container>
 

@@ -14,7 +14,7 @@ const BottomSection = () => {
     { text: 'Intégration de la visite à votre site web' },
   ]
   return (
-    <div className="mx-5  mb-10 md:mb-0 mt-2 md:px-20 md:mx-0 relative md:h-[45vw]  md:mt-[-50px]   ">
+    <div className="mx-5  mb-10 md:mb-0 mt-2 md:px-40 md:mx-0 relative md:h-[45vw]  md:mt-[-50px]   ">
       <div className="space-y-[50px] md:flex md:flex-col md:w-[40%]  md:pt-[15%]">
         <Title
           color={'black'}
