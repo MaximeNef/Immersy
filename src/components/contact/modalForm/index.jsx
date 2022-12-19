@@ -6,7 +6,7 @@ const ModalForm = () => {
   const [form, setForm] = useState({
     nom: '',
     prenom: '',
-    mail: '',
+    email: '',
     tel: '',
     message: '',
   })
@@ -19,7 +19,7 @@ const ModalForm = () => {
       body: JSON.stringify({
         nom: form.nom,
         prenom: form.prenom,
-        mail: form.mail,
+        email: form.email,
         telephone: form.tel,
         selected: form.nom,
         message: form.message,
