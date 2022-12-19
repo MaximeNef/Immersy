@@ -7,7 +7,9 @@ const Footer = ({ current }) => {
   return (
     <div
       id={
-        current == 'services' || current == 'tarifs' ? 'blue-footer' : 'footer'
+        current == 'Nos services' || current == 'Tarifs'
+          ? 'blue-footer'
+          : 'footer'
       }
       className="pt-20 pb-10"
     >

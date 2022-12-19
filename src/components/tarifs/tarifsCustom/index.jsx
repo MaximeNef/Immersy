@@ -14,15 +14,6 @@ const TarifsCustom = () => {
       <div className="mt-12">
         <PricingCards />
       </div>
-      <div className="mt-12">
-        <Title
-          mainTitle="Tarifs pour entreprise"
-          subTitle="virtualisation de plusieurs espaces"
-        />
-      </div>
-      <div className="mt-12">
-        <DemandeTarifs />
-      </div>
     </div>
   )
 }

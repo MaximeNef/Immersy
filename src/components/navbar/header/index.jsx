@@ -8,7 +8,7 @@ import Burger from '../burger'
 import Popup from '../popup'
 import MenuDesktop from './MenuDesktop'
 
-const Header = ({ links }) => {
+const Header = ({ links, current }) => {
   const [isOpen, setIsOpen] = useState(false)
 
   const handleClick = () => {
@@ -37,7 +37,7 @@ const Header = ({ links }) => {
             <Burger handleClick={handleClick} />
           </div>
           <div className="md:inline-flex hidden">
-            <MenuDesktop links={links} />
+            <MenuDesktop links={links} current={current} />
           </div>
         </Flex>
       </Container>

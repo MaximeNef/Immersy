@@ -4,7 +4,7 @@ import Title from '../../shared/title'
 const Besoins = () => {
   return (
     <div>
-      <div className="mx-5 space-y-[50px] mt-32 mb-14">
+      <div className="mx-5 md:mx-40 space-y-[50px] mt-32 mb-14">
         <Title
           color="black"
           mainTitle="Des services"

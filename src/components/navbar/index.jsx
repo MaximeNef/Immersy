@@ -28,7 +28,7 @@ const Navbar = ({ children, current }) => {
   ])
   return (
     <Container>
-      <Header links={links} />
+      <Header links={links} current={current} />
       {children}
       <Footer current={current} />
     </Container>

@@ -22,8 +22,8 @@ const Realisation = () => {
     },
   ]
   return (
-    <Container>
-      <div className={'mt-32 mx-5 mb-10'}>
+    <Container className={'md:px-40'}>
+      <div className={'mt-32 mx-5 mb-10 '}>
         <Title
           mainTitle={'Votre réalisation'}
           subTitle={'ce que nous faisons de mieux'}

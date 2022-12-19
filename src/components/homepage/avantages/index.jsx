@@ -26,7 +26,7 @@ const Avantages = () => {
   ]
   return (
     <Container>
-      <div id="blue-clip" className="w-full h-20" />
+      <div id="blue-clip" className="w-full h-20 mb-[-1px]" />
       <Container className="bg-[#1A2341] py-5 ">
         <div className="mx-5 md:mx-40   space-y-[35px] md:space-y-[90px] md:mb-[90px]">
           <Title

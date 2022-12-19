@@ -5,7 +5,7 @@ import MyImage from '../myimage'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-const AvantageItems = ({ avantages, color }) => {
+const AvantageItems = ({ avantages, color, current }) => {
   useEffect(() => {
     AOS.init({ offset: 10, once: true })
   }, [])
@@ -15,9 +15,13 @@ const AvantageItems = ({ avantages, color }) => {
         return (
           <div data-aos="fade-right" key={i} className="">
             <Flex
-              className={`my-[40px] md:flex-col md:items-center md:text-center md:w-[200px] lg:w-[280px] 2xl:w-[350px]  ${
-                i == 1 ? ' md:scale-150 md:px-10 ' : ''
-              }`}
+              className={`my-[40px] md:flex-col md:items-center md:text-center md:w-[200px] lg:w-[280px] 2xl:w-[350px] ${
+                current == 'Nos services'
+                  ? ''
+                  : i == 1
+                  ? ' md:scale-150 md:px-10 '
+                  : ''
+              } `}
             >
               <Container className="w-fit  mr-[25px] md:mr-0 md:mb-3">
                 <MyImage src={avantage.img} w={50} h={50} />
