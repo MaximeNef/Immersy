@@ -22,7 +22,7 @@ const Navbar = ({ children, current }) => {
       href: '/tarifs',
     },
     {
-      page: 'Contacts',
+      page: 'Contact',
       href: '/contact',
     },
   ])

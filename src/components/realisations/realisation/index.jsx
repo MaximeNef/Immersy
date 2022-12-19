@@ -10,7 +10,7 @@ const Realisation = () => {
         'La grande marque Belge pour bébé a souhaité numériser son espace pour apporter une expérience 100% immersive à ses utilisateurs.',
       src: '/assets/theophile.png',
       btnText: 'Découvrir la visite',
-      href: '/',
+      href: 'https://my.matterport.com/show/?m=RrWoNKkGKL7',
     },
     {
       title: 'Votre Projet',
@@ -18,7 +18,7 @@ const Realisation = () => {
         'Chaque visite est réalisée selon vos besoins. Que vous soyez une agence immobilière, un hôtel, un gîte, des assurance ou une entreprise souhaitant se digitaliser.',
       src: 'assets/votre_projet.png',
       btnText: 'Demander un devis',
-      href: '/',
+      href: '/tarifs/contact',
     },
   ]
   return (
