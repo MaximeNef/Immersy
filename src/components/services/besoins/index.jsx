@@ -1,10 +1,11 @@
 import Description from '../../shared/description'
+import MyImage from '../../shared/myimage'
 import Title from '../../shared/title'
 
 const Besoins = () => {
   return (
-    <div>
-      <div className="mx-5 md:mx-40 space-y-[50px] mt-32 mb-14">
+    <div className="md:relative">
+      <div className="mx-5 md:mx-40 space-y-[50px] mt-32 mb-14 md:w-[40%] ">
         <Title
           color="black"
           mainTitle="Des services"
@@ -20,6 +21,14 @@ const Besoins = () => {
           fontWeight="font-semibold"
         />
       </div>
+
+      <MyImage
+        src={'/assets/VrImmage.png'}
+        h={240}
+        w={560}
+        className="hidden md:inline-flex absolute top-[15vh] md:right-[10vw]"
+      />
+
       <div id="pyramid-clip" className="w-full h-12" />
     </div>
   )

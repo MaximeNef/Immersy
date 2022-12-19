@@ -50,14 +50,14 @@ const AvantagesList = ({ current }) => {
 
   return (
     <Container>
-      <div id="blue-wave" className="w-full h-24 " />
+      <div id="blue-wave" className="w-full h-24 mt-[-1px] " />
       <Container className="mt-10 md:px-40">
-        <div className="mx-5 space-y-[35px] ">
+        <div className="mx-5 space-y-[35px]  ">
           <Title mainTitle="Les avantages" subTitle="d’une visite virtuelle" />
+
           <AvantageItems avantages={avantages} current={current} />
         </div>
       </Container>
-      <div id="blue-wave" className="w-full h-20 rotate-180" />
     </Container>
   )
 }
