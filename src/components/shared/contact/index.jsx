@@ -1,9 +1,26 @@
+import { useEffect, useState } from 'react'
 import Flex from '../flex'
 import FormSubmitBtn from '../formSubmitBtn'
 import Input from '../input'
 import Title from '../title'
 
 const ContactForm = ({ data, setData, textarea, selected }) => {
+  const [buttonDisabled, setButtonDisabled] = useState(true)
+
+  useEffect(() => {
+    if (
+      !(data.prenom == null || data.prenom == '') &&
+      !(data.nom == null || data.nom == '') &&
+      data.email.match(
+        /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+      )
+    ) {
+      setButtonDisabled(false)
+    } else {
+      setButtonDisabled(true)
+    }
+  }, [data.prenom, data.nom, data.email])
+
   return (
     <>
       <Title mainTitle={'Recontactez-moi ici ...'} />
@@ -35,9 +52,9 @@ const ContactForm = ({ data, setData, textarea, selected }) => {
           elementType={'input'}
           required
           inputType={'email'}
-          data={data.mail}
+          data={data.email}
           setData={setData}
-          name="mail"
+          name="email"
           inputError="Veuillez entrer une adresse email valide"
         />
         {selected == 'Professionel' ? (
@@ -66,7 +83,11 @@ const ContactForm = ({ data, setData, textarea, selected }) => {
             name="message"
           />
         ) : null}
-        <FormSubmitBtn text="Envoyer" colorBg="blue" />
+        <FormSubmitBtn
+          text="Envoyer"
+          colorBg="blue"
+          disabled={buttonDisabled}
+        />
       </div>
     </>
   )

@@ -9,7 +9,7 @@ const TarifForm = ({ surfaceInfo }) => {
   const [form, setForm] = useState({
     nom: '',
     prenom: '',
-    mail: '',
+    email: '',
     entreprise: '',
     tel: '',
     selected: '',
@@ -32,7 +32,7 @@ const TarifForm = ({ surfaceInfo }) => {
       body: JSON.stringify({
         nom: form.nom,
         prenom: form.prenom,
-        mail: form.mail,
+        email: form.email,
         entreprise: form.entreprise,
         telephone: form.tel,
         selected: form.selected,
