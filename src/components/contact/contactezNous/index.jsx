@@ -9,12 +9,13 @@ const ContactezNous = ({ isSelected, setIsSelected }) => {
   }
 
   const handleClickModal = () => {
-    setIsSelected(() => (isSelected = !isSelected))
+    console.log('testttt')
+    setHideModal(() => (hideModal = true))
   }
 
   return (
     <div className="mt-32 mx-5">
-      <div className="mb-5">
+      <div className="mb-5 md:text-center">
         <Title mainTitle="Contactez-nous" subTitle="et laissez vous guider" />
       </div>
       <div className="space-y-[20px] mb-[50px]">

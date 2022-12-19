@@ -2,11 +2,11 @@ import { useRouter } from 'next/router'
 import { useState } from 'react'
 import ContactForm from '../../shared/contact'
 
-const ModalForm = () => {
+const ModalForm = ({ setHideModal, hideModal }) => {
   const [form, setForm] = useState({
     nom: '',
     prenom: '',
-    mail: '',
+    email: '',
     tel: '',
     message: '',
   })
@@ -19,7 +19,7 @@ const ModalForm = () => {
       body: JSON.stringify({
         nom: form.nom,
         prenom: form.prenom,
-        mail: form.mail,
+        email: form.email,
         telephone: form.tel,
         selected: form.nom,
         message: form.message,
@@ -32,10 +32,19 @@ const ModalForm = () => {
     router.push('/envoi')
   }
 
+  const handleClickModal = () => {
+    setHideModal(() => (hideModal = false))
+  }
+
   return (
-    <form method="post" onSubmit={handleSubmit}>
-      <ContactForm data={form} setData={setForm} textarea={true} />
-    </form>
+    <div className="space-y-[30px]">
+      <button onClick={handleClickModal} className="font-thin">
+        &#8592; Retour
+      </button>
+      <form method="post" onSubmit={handleSubmit}>
+        <ContactForm data={form} setData={setForm} textarea={true} />
+      </form>
+    </div>
   )
 }
 

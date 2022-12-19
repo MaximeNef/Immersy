@@ -8,9 +8,9 @@ const Partage = () => {
     { text: 'Visite disponible sur mobile et pc' },
   ]
   return (
-    <div>
-      <div id="blue-wave" className="w-full h-20" />
-      <div className="pt-5 px-5">
+    <div className="md:hidden">
+      <div id="blue-wave" className="w-full h-20 mt-[-1px]" />
+      <div className="pt-5 px-5 md:px-40">
         <div className="space-y-[50px] mb-5">
           <Title
             mainTitle={'Partage & intégration de'}

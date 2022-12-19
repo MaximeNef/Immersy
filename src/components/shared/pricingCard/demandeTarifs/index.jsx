@@ -11,7 +11,9 @@ const DemandeTarifs = () => {
   }, [])
   return (
     <div data-aos="fade-right">
-      <Link href={{ pathname: '/tarifs/contact', query: { surface: null } }}>
+      <Link
+        href={{ pathname: '/tarifs/contact', query: { surface: 'custom' } }}
+      >
         <Container className="bg-[#1A2341]  my-2 text-white text-center rounded-xl border-[1px] border-white py-5 relative space-y-2">
           <Container className="w-fit absolute top-5 left-5">
             <MyImage
@@ -23,7 +25,7 @@ const DemandeTarifs = () => {
           </Container>
           <div>
             <h2 className="text-xl w-full">Demande de tarifs</h2>
-            <p className="pl-[90px] text-left text-[15px] font-light w-[85%]">
+            <p className="pl-[90px] text-left md:text-center text-[15px] font-light w-[85%]">
               Tarif sur mesure en fonction du nombre de biens.
             </p>
             <div className="text-2xl absolute right-6 bottom-9">&rarr;</div>

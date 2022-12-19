@@ -22,13 +22,13 @@ const Navbar = ({ children, current }) => {
       href: '/tarifs',
     },
     {
-      page: 'Contacts',
+      page: 'Contact',
       href: '/contact',
     },
   ])
   return (
     <Container>
-      <Header links={links} />
+      <Header links={links} current={current} />
       {children}
       <Footer current={current} />
     </Container>

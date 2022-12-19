@@ -2,7 +2,7 @@ import AvantageItems from '../../shared/AvantageItems'
 import Container from '../../shared/container'
 import Title from '../../shared/title'
 
-const AvantagesList = () => {
+const AvantagesList = ({ current }) => {
   const avantages = [
     {
       img: '/assets/24-7.svg',
@@ -50,14 +50,14 @@ const AvantagesList = () => {
 
   return (
     <Container>
-      <div id="blue-clip" className="w-full h-24 rotate-180" />
-      <Container className="mt-10">
-        <div className="mx-5 space-y-[35px] ">
+      <div id="blue-wave" className="w-full h-24 mt-[-1px] " />
+      <Container className="mt-10 md:px-40">
+        <div className="mx-5 space-y-[35px]  ">
           <Title mainTitle="Les avantages" subTitle="d’une visite virtuelle" />
-          <AvantageItems avantages={avantages} />
+
+          <AvantageItems avantages={avantages} current={current} />
         </div>
       </Container>
-      <div id="blue-wave" className="w-full h-20 rotate-180" />
     </Container>
   )
 }

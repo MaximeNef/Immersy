@@ -7,7 +7,9 @@ const Footer = ({ current }) => {
   return (
     <div
       id={
-        current == 'services' || current == 'tarifs' ? 'blue-footer' : 'footer'
+        current == 'Nos services' || current == 'Tarifs'
+          ? 'blue-footer'
+          : 'footer'
       }
       className="pt-20 pb-10"
     >
@@ -40,11 +42,16 @@ const Footer = ({ current }) => {
           </Link>
         </Container>
 
-        <Container className="space-y-4 flex flex-col mb-auto pl-8">
+        <Container className="space-y-4 flex flex-col mb-auto pl-8 md:flex md:flex-col md:items-end md:mr-5">
           <p className=" text-sm text-left font-light">IMMERSY</p>
-          <p className=" text-sm text-left font-light">0470/68.45.51</p>
+          <p className=" text-sm text-left font-light">
+            <a href="tel:0470/68.45.51">0470/68.45.51</a>
+          </p>
           <div className="text-sm text-left font-light">
-            {'Immersy.info@ gmail.com'}
+            <a href="mailto:Immersy.info@ gmail.com">
+              {' '}
+              {'Immersy.info@ gmail.com'}
+            </a>
           </div>
         </Container>
       </Flex>

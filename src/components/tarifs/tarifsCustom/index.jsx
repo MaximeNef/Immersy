@@ -4,7 +4,7 @@ import Title from '../../shared/title'
 
 const TarifsCustom = () => {
   return (
-    <div className="mx-5">
+    <div className="mx-5 md:mx-40 md:mb-20">
       <div className="mt-32">
         <Title mainTitle="Nos tarifs" subTitle="un avantage sur-mesure" />
       </div>
@@ -13,15 +13,6 @@ const TarifsCustom = () => {
       </div>
       <div className="mt-12">
         <PricingCards />
-      </div>
-      <div className="mt-12">
-        <Title
-          mainTitle="Tarifs pour entreprise"
-          subTitle="virtualisation de plusieurs espaces"
-        />
-      </div>
-      <div className="mt-12">
-        <DemandeTarifs />
       </div>
     </div>
   )

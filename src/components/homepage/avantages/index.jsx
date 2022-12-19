@@ -26,16 +26,18 @@ const Avantages = () => {
   ]
   return (
     <Container>
-      <div id="blue-clip" className="w-full h-20" />
-      <Container className="bg-[#1A2341] py-5">
-        <div className="mx-5 space-y-[35px] ">
+      <div id="blue-clip" className="w-full h-20 mb-[-1px]" />
+      <Container className="bg-[#1A2341] py-5 ">
+        <div className="mx-5 md:mx-40   space-y-[35px] md:space-y-[90px] md:mb-[90px]">
           <Title
             mainTitle="Les avantages"
             subTitle="d’une visite virtuelle"
             color="text-white"
           />
+
           <AvantageItems color="text-white" avantages={avantages} />
-          <Btn1 link="/" text="En savoir plus" />
+
+          <Btn1 link="/services" text="En savoir plus" />
         </div>
       </Container>
       <div id="blue-wave" className="w-full h-20" />

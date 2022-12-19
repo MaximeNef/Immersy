@@ -10,19 +10,23 @@ const Information = ({ infos }) => {
     AOS.init({ once: true })
   }, [])
   return (
-    <div>
+    <div className="mx-auto space-y-4 md:space-y-0 justify-center  w-full md:flex md:flex-wrap md:pl-40 md:mt-[140px]">
       {infos.map((info, index) => {
         return (
-          <div key={index} data-aos="fade-up">
-            <Flex className="my-2">
-              <Container className="w-fit mr-4">
+          <Container
+            key={index}
+            data-aos="fade-up"
+            className="sm:w-[50%] md:mr-auto w-fit"
+          >
+            <Flex className="my-2  w-fit ">
+              <Container className="w-fit mr-4 ">
                 <MyImage src={'/assets/immersyicon.svg'} w={23} h={23} />
               </Container>
               <Container>
-                <p className="font-light">{info.text}</p>
+                <p className="font-light md:w-fit ">{info.text}</p>
               </Container>
             </Flex>
-          </div>
+          </Container>
         )
       })}
     </div>
