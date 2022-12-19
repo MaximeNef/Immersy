@@ -14,7 +14,7 @@ const Tarifs = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <TarifsCustom />
-      <div className="md:flex md:flex-row md:mx-40 ">
+      <div className="md:flex md:flex-row md:mt-10 md:mx-40 md:space-x-40 ">
         <div className="mt-12 space-y-12 mx-5 md:w-[50%] ">
           <Title
             mainTitle="Tarifs pour entreprise"
