@@ -5,6 +5,7 @@ import Base from '../../components/services/base'
 import Besoins from '../../components/services/besoins'
 import Partage from '../../components/services/partage'
 import PetitsPlus from '../../components/services/petitsPlus'
+import ServicesList from '../../components/services/ServicesList'
 import Projet from '../../components/shared/projet'
 
 const Services = () => {
@@ -16,9 +17,14 @@ const Services = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Besoins />
+
       <Base />
       <Partage />
       <PetitsPlus />
+
+      <div className="hidden md:inline-flex">
+        <ServicesList />
+      </div>
       <AvantagesList current={'Nos services'} />
       <Projet blue={true} />
     </Navbar>
