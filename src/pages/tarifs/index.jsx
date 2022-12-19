@@ -15,7 +15,7 @@ const Tarifs = () => {
       </Head>
       <TarifsCustom />
       <div className="md:flex md:flex-row md:mx-40 ">
-        <div className="mt-12 space-y-12 mx-5 md:w-[50%]">
+        <div className="mt-12 space-y-12 mx-5 md:w-[50%] ">
           <Title
             mainTitle="Tarifs pour entreprise"
             subTitle="virtualisation de plusieurs espaces"
