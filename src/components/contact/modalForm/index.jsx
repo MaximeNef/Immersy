@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 import { useState } from 'react'
 import ContactForm from '../../shared/contact'
 
-const ModalForm = () => {
+const ModalForm = ({ setHideModal, hideModal }) => {
   const [form, setForm] = useState({
     nom: '',
     prenom: '',
@@ -32,10 +32,19 @@ const ModalForm = () => {
     router.push('/envoi')
   }
 
+  const handleClickModal = () => {
+    setHideModal(() => (hideModal = false))
+  }
+
   return (
-    <form method="post" onSubmit={handleSubmit}>
-      <ContactForm data={form} setData={setForm} textarea={true} />
-    </form>
+    <div className="space-y-[30px]">
+      <button onClick={handleClickModal} className="font-thin">
+        &#8592; Retour
+      </button>
+      <form method="post" onSubmit={handleSubmit}>
+        <ContactForm data={form} setData={setForm} textarea={true} />
+      </form>
+    </div>
   )
 }
 

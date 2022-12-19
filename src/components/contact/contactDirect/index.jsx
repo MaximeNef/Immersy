@@ -1,5 +1,3 @@
-import Title from '../../shared/title'
-
 const ContactDirect = () => {
   return (
     <div className="mx-5 mb-[50px] md:text-center">

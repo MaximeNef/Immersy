@@ -6,7 +6,7 @@ import ModalForm from '../../components/contact/modalForm'
 import Navbar from '../../components/navbar'
 
 const Contact = () => {
-  const [isSelected, setIsSelected] = useState(false)
+  const [hideModal, setHideModal] = useState(false)
 
   return (
     <Navbar current={'contact'}>
@@ -16,16 +16,13 @@ const Contact = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="md:mx-80">
-        {isSelected ? (
-          <div className="mx-5 mt-32 ">
-            <ModalForm />
+        {hideModal ? (
+          <div className="mx-5 mt-32 md:mt-28">
+            <ModalForm setHideModal={setHideModal} hideModal={hideModal} />
           </div>
         ) : (
           <>
-            <ContactezNous
-              isSelected={isSelected}
-              setIsSelected={setIsSelected}
-            />
+            <ContactezNous hideModal={hideModal} setHideModal={setHideModal} />
             <ContactDirect />
           </>
         )}
