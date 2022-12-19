@@ -37,7 +37,7 @@ const Avantages = () => {
 
           <AvantageItems color="text-white" avantages={avantages} />
 
-          <Btn1 link="/" text="En savoir plus" />
+          <Btn1 link="/services" text="En savoir plus" />
         </div>
       </Container>
       <div id="blue-wave" className="w-full h-20" />

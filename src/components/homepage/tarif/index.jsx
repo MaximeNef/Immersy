@@ -15,7 +15,7 @@ const Tarif = () => {
             color="text-white"
           />
           <PricingCards />
-          <Btn1 link="/" colorBg={'white'} text="En savoir plus" />
+          <Btn1 link="/tarifs" colorBg={'white'} text="En savoir plus" />
         </div>
       </Container>
       <div id="blue-wave" className="w-full h-20" />

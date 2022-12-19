@@ -28,7 +28,7 @@ const BottomSection = () => {
           }
         />
         <div className="md:mr-auto">
-          <Btn1 link={'/'} colorBg={'blue'} text={'Contact'} />{' '}
+          <Btn1 link={'/contact'} colorBg={'blue'} text={'Contact'} />{' '}
         </div>
       </div>
       <MyImage

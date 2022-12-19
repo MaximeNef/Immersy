@@ -10,7 +10,7 @@ const Realisation = () => {
         subTitle="ce que nous faisons de mieux"
       />
       <RealisationCards />
-      <Btn1 link="/" text="Nos réalisations" colorBg="blue" />
+      <Btn1 link="/realisations" text="Nos réalisations" colorBg="blue" />
     </div>
   )
 }
