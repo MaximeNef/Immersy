@@ -19,7 +19,7 @@ const AvantageItems = ({ avantages, color, current }) => {
                 current == 'Nos services'
                   ? ''
                   : i == 1
-                  ? ' xl:scale-150 xl:px-10 '
+                  ? ' min-[1400px]:scale-150 min-[1400px]:px-10 '
                   : ''
               } `}
             >
