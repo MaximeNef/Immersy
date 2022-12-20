@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import Title from '../../../components/shared/title'
 import CarteContact from '../../shared/carteContact'
-const ContactezNous = ({ isSelected, setIsSelected }) => {
+const ContactezNous = ({ hideModal, setHideModal }) => {
   const router = useRouter()
 
   const handleClick = () => {
@@ -9,7 +9,6 @@ const ContactezNous = ({ isSelected, setIsSelected }) => {
   }
 
   const handleClickModal = () => {
-    console.log('testttt')
     setHideModal(() => (hideModal = true))
   }
 
