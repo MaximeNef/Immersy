@@ -10,13 +10,13 @@ const Information = ({ infos }) => {
     AOS.init({ once: true })
   }, [])
   return (
-    <div className="mx-auto space-y-4 md:space-y-0 justify-center  w-full md:flex md:flex-wrap md:pl-40 md:mt-[140px]">
+    <div className="mx-auto space-y-4 md:space-y-0 justify-center  w-full lg:flex lg:flex-wrap md:pl-40 lg:mt-[140px]">
       {infos.map((info, index) => {
         return (
           <Container
             key={index}
             data-aos="fade-up"
-            className="sm:w-[50%] md:mr-auto w-fit"
+            className="lg:w-[50%] lg:mr-auto w-fit"
           >
             <Flex className="my-2  w-fit ">
               <Container className="w-fit mr-4 ">

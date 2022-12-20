@@ -33,10 +33,10 @@ const Header = ({ links, current }) => {
               <MyImage src={'/assets/immersyicon.svg'} w={40} h={40} />
             </Link>
           </Container>
-          <div className="inline-flex md:hidden">
+          <div className="inline-flex lg:hidden">
             <Burger handleClick={handleClick} />
           </div>
-          <div className="md:inline-flex hidden">
+          <div className="lg:inline-flex hidden">
             <MenuDesktop links={links} current={current} />
           </div>
         </Flex>
