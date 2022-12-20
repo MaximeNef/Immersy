@@ -9,10 +9,7 @@ const Title = ({ color, fontWeight, mainTitle, subTitle }) => {
 
   return (
     <div className="">
-      <h2
-        data-aos="fade-right"
-        className={`${color} text-xl md:font-bold ${fontWeight}`}
-      >
+      <h2 data-aos="fade-right" className={`${color} text-xl ${fontWeight}`}>
         {mainTitle}
       </h2>
       <h2 className={`${color} text-xl font-thin`}>{subTitle}</h2>
