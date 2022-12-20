@@ -7,7 +7,7 @@ const Projet = ({ current, blue }) => {
   return (
     <div>
       {blue ? (
-        <div id="gradient-wave" className="w-full h-20 rotate-180 mb-0" />
+        <div id="gradient-wave" className="w-full h-20 rotate-180" />
       ) : (
         <></>
       )}

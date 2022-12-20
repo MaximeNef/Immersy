@@ -25,7 +25,7 @@ const DemandeTarifs = () => {
           </Container>
           <div>
             <h2 className="text-xl w-full">Demande de tarifs</h2>
-            <p className="pl-[90px] text-left md:text-center text-[15px] font-light w-[85%]">
+            <p className="pl-[90px] text-left min-[420px]:text-center text-[15px] font-light w-[85%]">
               Tarif sur mesure en fonction du nombre de biens.
             </p>
             <div className="text-2xl absolute right-6 bottom-9">&rarr;</div>

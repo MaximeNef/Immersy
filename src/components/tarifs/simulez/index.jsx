@@ -45,7 +45,7 @@ const Simulez = () => {
       <input
         value={meter}
         onChange={handleChange}
-        type="tel"
+        type="number"
         placeholder="Nombre de m&#178;"
       />
     </div>
