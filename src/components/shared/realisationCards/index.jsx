@@ -51,7 +51,7 @@ const RealisationCards = () => {
           <div className="rounded-[10px] h-[225px] blur-sm w-full z-20 absolute  bg-gradient-to-b from-black/0 to-[#1A2341] md:h-[350px]" />
           <Flex className={'flex-col justify-center  h-[225px]  md:h-[350px]'}>
             <MyImage
-              src="/assets/Play.svg"
+              src="/assets/play.svg"
               w={50}
               h={50}
               className="mx-auto z-30"
