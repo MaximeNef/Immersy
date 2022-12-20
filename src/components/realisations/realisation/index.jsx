@@ -29,7 +29,7 @@ const Realisation = () => {
           subTitle={'ce que nous faisons de mieux'}
         />
       </div>{' '}
-      <div className="md:flex md:flex-row ">
+      <div className="lg:flex lg:flex-row ">
         {realisations.map((item, i) => {
           return <ProjetCards key={i} item={item} />
         })}{' '}
