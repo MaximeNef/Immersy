@@ -9,8 +9,8 @@ const Base = () => {
     { text: 'Photos 360°' },
   ]
   return (
-    <div className="pt-5 md:px-40 px-5 bg-[#1A2341] md:hidden">
-      <div className="space-y-[50px] mb-5 text-white">
+    <div className="pt-5 md:px-40 px-5 bg-[#1A2341] ">
+      <div className="space-y-[50px] pb-5 text-white">
         <Title mainTitle={'La base de'} subTitle={'votre visite'} />
         <Information infos={infos} />
       </div>

@@ -26,7 +26,7 @@ const Besoins = () => {
         src={'/assets/VrImmage.png'}
         h={240}
         w={560}
-        className="hidden md:inline-flex absolute top-[15vh] md:right-[10vw]"
+        className="hidden xl:inline-flex absolute top-[15vh] xl:right-[10vw]"
       />
 
       <div id="pyramid-clip" className="w-full h-12" />

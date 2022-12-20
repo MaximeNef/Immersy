@@ -18,11 +18,13 @@ const Services = () => {
       </Head>
       <Besoins />
 
-      <Base />
-      <Partage />
-      <PetitsPlus />
+      <div className="lg:hidden">
+        <Base />
+        <Partage />
+        <PetitsPlus />
+      </div>
 
-      <div className="hidden md:inline-flex">
+      <div className="hidden lg:inline-flex">
         <ServicesList />
       </div>
       <AvantagesList current={'Nos services'} />
