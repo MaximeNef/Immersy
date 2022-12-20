@@ -6,7 +6,11 @@ const FormSubmitBtn = ({ colorBg, text, disabled }) => {
       <button
         type="submit"
         disabled={disabled}
-        className={`${disabled ? 'bg-slate-300' : ''} ${
+        className={`${
+          disabled
+            ? 'bg-slate-300'
+            : 'hover:scale-110 transform transition duration-500  hover:shadow-lg'
+        } ${
           colorBg == 'blue'
             ? 'bg-[#00C9FF] text-white'
             : 'bg-white text-[#00C9FF]'
