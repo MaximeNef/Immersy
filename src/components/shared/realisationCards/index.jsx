@@ -25,7 +25,7 @@ const RealisationCards = () => {
             }
           >
             <MyImage
-              src="/assets/Play.svg"
+              src="/assets/play.svg"
               w={50}
               h={50}
               className="mx-auto "
