@@ -5,7 +5,7 @@ const CarteContact = ({ text, handleClick, selected, arrow }) => {
         selected == text
           ? 'bg-[#1A2341] text-white shadow-btn'
           : 'bg-white text-[#1A2341] border-[1px] border-[#1A2341]'
-      } mx-auto py-9 rounded-[10px] text-center text-xl  tracking-wider relative transform transition duration-500 md:hover:scale-110 hover:shadow-lg md:hover:bg-[#1A2341] md:hover:text-white cursor-pointer  `}
+      } mx-auto 2xl:mx-40 py-9 rounded-[10px] text-center text-xl  tracking-wider relative transform transition duration-500 md:hover:scale-110 hover:shadow-lg md:hover:bg-[#1A2341] md:hover:text-white cursor-pointer  `}
       onClick={() => {
         handleClick({ text })
       }}
