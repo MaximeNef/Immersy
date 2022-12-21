@@ -9,7 +9,7 @@ const MenuDesktop = ({ links, current }) => {
             <p
               className={`text-left font-extralight tracking-   ${
                 index == 4
-                  ? ' border-[1px] rounded-[50px] px-2 py-1 shadow-md lg:ml-[30vh] xl:ml-[60vh] 2xl:ml-[90vh] font-bold bg-[#00C9FF] !text-white'
+                  ? 'rounded-[50px] px-3 py-1 shadow-md lg:ml-[30vh] xl:ml-[60vh] 2xl:ml-[90vh] font-bold bg-[#00C9FF] !text-white'
                   : 'mx-5'
               } ${
                 current == link.page
