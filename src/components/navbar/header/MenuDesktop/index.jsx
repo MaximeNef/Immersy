@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Flex from '../../../shared/flex'
 
 const MenuDesktop = ({ links, current }) => {
   return (
@@ -10,12 +9,12 @@ const MenuDesktop = ({ links, current }) => {
             <p
               className={`text-left font-extralight tracking-   ${
                 index == 4
-                  ? ' border-[1px] rounded-[50px] border-black px-2 py-1 shadow-md lg:ml-[30vh] xl:ml-[60vh] 2xl:ml-[90vh] font-bold '
+                  ? ' border-[1px] rounded-[50px] px-2 py-1 shadow-md lg:ml-[30vh] xl:ml-[60vh] 2xl:ml-[90vh] font-bold bg-[#00C9FF] text-white'
                   : 'mx-5'
               } ${
                 current == link.page
-                  ? 'underline underline-offset-8 under text-[#1A2341]  text-[17px]'
-                  : 'text-slate-600  text-[16px] '
+                  ? 'underline underline-offset-8 under text-[#1A2341] text-[17px]'
+                  : 'text-slate-600 text-[16px]'
               }`}
             >
               {link.page}
