@@ -11,11 +11,11 @@ const Hero = () => {
           className={'object-cover absolute z-[-10]'}
         />
       </div>
-      <div className="text-center mt-[70%] md:my-auto z-10 leading-none">
-        <p className="font-SFNSRounded text-[60px] md:text-[120px] text-white">
+      <div className="text-center mt-[38vh] sm:my-auto z-10 leading-none">
+        <p className="font-SFNSRounded text-[60px] sm:text-[120px] text-white">
           IMMERSY
         </p>
-        <p className="text-[20px] md:text-[36px] font-light text-white">
+        <p className="text-[20px] sm:text-[36px] font-light text-white">
           DONNEZ VIE À VOS ESPACES
         </p>
       </div>

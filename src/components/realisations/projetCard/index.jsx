@@ -3,7 +3,7 @@ import MyImage from '../../shared/myimage'
 
 const ProjetCards = ({ item }) => {
   return (
-    <div className="w-fit mx-5 text-white my-6 lg:w-1/2 hover:scale-110 transform transition duration-500  hover:shadow-lg">
+    <div className="w-fit mx-5 text-white my-6 lg:w-1/2 lg:hover:scale-110 transform transition duration-500  lg:hover:shadow-lg">
       <Link href={item.href}>
         <div className="h-[225px] mx-auto relative">
           <MyImage
