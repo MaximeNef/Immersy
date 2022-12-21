@@ -6,7 +6,6 @@ import Tarif from '../components/homepage/tarif'
 import Realisation from '../components/homepage/realisation'
 import Navbar from '../components/navbar'
 import BottomSection from '../components/homepage/bottomSection'
-import VideoPlayer from '../components/shared/video'
 
 export default function Home() {
   return (

@@ -8,6 +8,14 @@
     @apply text-[#1A2341];
   }
 
+  @font-face {
+    font-family: 'SFNSRounded';
+    src: url('/fonts/SFNSRounded.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+  }
+
   input,
   textarea {
     border: 1px solid #1a2341;

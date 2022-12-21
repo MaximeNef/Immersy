@@ -1,6 +1,5 @@
 import Container from '../../shared/container'
 import MyImage from '../../shared/myimage'
-import VideoPlayer from '../../shared/video'
 
 const Hero = () => {
   return (
@@ -10,9 +9,14 @@ const Hero = () => {
         layout="fill"
         className={'object-cover'}
       />
-      {/* <div className="hidden md:inline-flex w-full h-full ">
-        <VideoPlayer video="video/VideoBarbiereV2.mp4" />
-      </div> */}
+      <div className="text-center mt-[70%] md:my-auto z-10 leading-none">
+        <p className="font-SFNSRounded text-[60px] md:text-[120px] text-white">
+          IMMERSY
+        </p>
+        <p className="text-[20px] md:text-[36px] font-light text-white">
+          DONNEZ VIE À VOS ESPACES
+        </p>
+      </div>
       <div id="clip" className="w-full h-28 absolute bottom-0" />
       <div
         className="absolute bottom-3  left-1/2 transform -translate-x-1/2 -translate-y-1/2
