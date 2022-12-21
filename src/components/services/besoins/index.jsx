@@ -5,7 +5,7 @@ import Title from '../../shared/title'
 const Besoins = () => {
   return (
     <div className="md:relative">
-      <div className="mx-5 md:mx-40 space-y-[50px] mt-32 mb-14 md:w-[40%] ">
+      <div className="mx-5 md:mx-40 space-y-[50px] mt-32 mb-14 min-[1330px]:w-[30%] ">
         <Title
           color="black"
           mainTitle="Des services"
@@ -23,10 +23,10 @@ const Besoins = () => {
       </div>
 
       <MyImage
-        src={'/assets/VrImmage.png'}
-        h={240}
-        w={560}
-        className="hidden xl:inline-flex absolute top-[15vh] xl:right-[10vw]"
+        src={'/assets/virtual_plan.png'}
+        h={150}
+        w={750}
+        className="hidden min-[1330px]:inline-flex absolute top-[25vh] right-[4vw] "
       />
 
       <div id="pyramid-clip" className="w-full h-12" />
