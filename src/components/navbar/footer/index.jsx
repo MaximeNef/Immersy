@@ -40,9 +40,12 @@ const Footer = ({ current }) => {
               className={'mx-auto'}
             />
           </Link>
-          <p className="text-xs text-center w-[290px] mt-20 mb-[-10px]">
+          <Link
+            href={'https://listri.digital/'}
+            className="text-xs text-center w-[290px] mt-20 mb-[-10px]"
+          >
             2022 © listri | Designed with passion by Listri
-          </p>
+          </Link>
         </Container>
 
         <Container className="space-y-4 flex flex-col mb-auto pl-8 min-[500px]:flex min-[500px]:flex-col min-[500px]:items-end min-[500px]:mr-5">
