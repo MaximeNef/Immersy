@@ -34,7 +34,7 @@ async function sendEmail(req, res) {
         req.body.prenom
       }</span></p>
               <h2>  Voici mon E-mail :  </h2>
-              <p style="color:blue;">✉️${req.body.mail}</p>
+              <p style="color:blue;">✉️ ${req.body.email}</p>
 
               <h2>Voici mon Numero de téléphone :</h2>
               <p style="color:blue;">${req.body.telephone}</p>
