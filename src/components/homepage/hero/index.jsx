@@ -4,18 +4,19 @@ import MyImage from '../../shared/myimage'
 const Hero = () => {
   return (
     <Container className="w-full h-screen  mb-[-120px] md:mb-0">
-      <div className="bg-[#1A2341]">
+      <div className="">
         <MyImage
           src="/assets/home_picture_desktop.png"
           layout="fill"
-          className={'object-cover absolute z-[-10]'}
+          className={'object-cover absolute z-[-10] '}
         />
+        <div className="bg-[#1A2341]/[23%] w-full h-screen absolute " />
       </div>
-      <div className="text-center mt-[38vh] sm:my-auto z-10 leading-none">
-        <p className="font-SFNSRounded text-[60px] sm:text-[120px] text-white">
+      <div className="text-center mt-[38vh] sm:my-auto z-20 leading-none">
+        <p className="font-SFNSRounded text-[60px] sm:text-[120px]   text-white">
           IMMERSY
         </p>
-        <p className="text-[20px] sm:text-[36px] font-light text-white">
+        <p className="text-[20px] sm:text-[36px] font-light  text-white">
           DONNEZ VIE À VOS ESPACES
         </p>
       </div>
