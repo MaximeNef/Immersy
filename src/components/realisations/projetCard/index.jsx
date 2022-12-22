@@ -9,7 +9,7 @@ const ProjetCards = ({ item }) => {
           <MyImage
             src={item.src}
             layout="fill"
-            className="rounded-t-xl md:object-cover"
+            className="rounded-t-xl md:object-cover "
           />
         </div>
         <div className="bg-[#1A2341] text-white p-6 rounded-b-xl space-y-5 md:h-[250px] xl:h-[200px] md:relative ">
