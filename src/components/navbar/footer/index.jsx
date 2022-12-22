@@ -42,7 +42,7 @@ const Footer = ({ current }) => {
           </Link>
           <Link
             href={'https://listri.digital/'}
-            className="text-xs text-center w-[290px] mt-20 mb-[-10px]"
+            className="text-xs text-center w-[290px] mt-20 md:mt-10 mb-[-10px]"
           >
             2022 © listri | Designed with passion by Listri
           </Link>
