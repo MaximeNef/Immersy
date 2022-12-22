@@ -30,10 +30,10 @@ const BottomSection = () => {
         </div>
       </div>
       <MyImage
-        src={'/assets/visitVrFooter.png'}
+        src={'/assets/footerImage.png'}
         objectFit="cover"
         layout={'fill'}
-        className={'absolute z-[-20] hidden lg:inline-flex'}
+        className={'absolute z-[-20] hidden lg:inline-flex '}
       />
     </div>
   )

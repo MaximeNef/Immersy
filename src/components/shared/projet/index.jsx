@@ -6,16 +6,9 @@ import Title from '../title'
 const Projet = ({ current, blue }) => {
   return (
     <div>
-      {blue ? (
-        <div id="gradient-wave" className="w-full h-20 rotate-180" />
-      ) : (
-        <></>
-      )}
       <div
         className={`px-5 pt-5 relative md:h-[45vw]  ${
-          blue
-            ? ' bg-gradient-to-r from-[#1A2341] to-[#1A2341]/0 text-white'
-            : null
+          blue ? ' text-white' : null
         }`}
       >
         {' '}
@@ -35,10 +28,14 @@ const Projet = ({ current, blue }) => {
           </div>
         </div>
         <MyImage
-          src={'/assets/visitVrFooter.png'}
+          src={
+            current == 'Nos réalisations'
+              ? '/assets/footerImage.png'
+              : '/assets/BluefooterImage.png'
+          }
           objectFit="cover"
           layout={'fill'}
-          className={'absolute z-[-20]   md:inline-flex'}
+          className={`absolute z-[-20]   md:inline-flex `}
         />
       </div>{' '}
     </div>

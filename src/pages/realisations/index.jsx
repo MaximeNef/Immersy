@@ -14,7 +14,7 @@ const Realisations = () => {
       </Head>
       <Realisation />
       <Container className="mt-12 ">
-        <Projet blue={false} />
+        <Projet blue={false} current={'Nos réalisations'} />
       </Container>
     </Navbar>
   )
