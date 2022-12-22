@@ -4,7 +4,7 @@ import Title from '../../shared/title'
 const Merci = () => {
   return (
     <div className="mt-28">
-      <div className=" text-center top-[50%] left-[50%] my-[min(5vh)]">
+      <div className=" text-center top-[50%] left-[50%] my-[min(5vh)] md:mb-32">
         <p className="text-5xl">Merci</p>
         <p className="text-5xl">🤝</p>
         <div className="mx-auto mt-5 w-[80%] mb-[50px]">
