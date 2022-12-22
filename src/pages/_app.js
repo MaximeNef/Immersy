@@ -4,7 +4,6 @@ import '../styles/globals.css'
 export default function MyApp({ Component, pageProps }) {
   return (
     <>
-      {/* UXWIZZ script  */}
       <Script id="uxwizz">
         UST_CT = []; UST =
         {'s: Date.now(), addTag: function(tag) {UST_CT.push(tag)}'}
