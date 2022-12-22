@@ -18,7 +18,7 @@ const Tarif = () => {
           <Btn1 link="/tarifs" colorBg={'white'} text="En savoir plus" />
         </div>
       </Container>
-      <div id="blue-wave" className="w-full h-20" />
+      <div id="blue-wave" className="w-full h-20 mt-[-1px]" />
     </Container>
   )
 }
