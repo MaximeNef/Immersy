@@ -21,7 +21,7 @@ const Input = ({
           value={data}
           required={required}
           type={inputType}
-          className="peer"
+          className={`peer ${showInputError ? 'invalid:border-red-600' : ''}`}
           onChange={(e) => {
             const { name, value } = e.target
             setData((prevData) => ({
