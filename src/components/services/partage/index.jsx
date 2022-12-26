@@ -19,7 +19,7 @@ const Partage = () => {
           <Information infos={infos} />
         </div>
       </div>
-      <div id="blue-wave" className="w-full h-20 rotate-180" />
+      <div id="blue-wave" className="w-full h-20 rotate-180 mb-[-1px] " />
     </div>
   )
 }
