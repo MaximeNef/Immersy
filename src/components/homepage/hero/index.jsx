@@ -10,7 +10,7 @@ const Hero = () => {
           layout="fill"
           className={'object-cover absolute z-[-10] '}
         />
-        <div className="bg-[#1A2341]/[23%] w-full h-screen absolute " />
+        <div className="bg-[#1A2341]/[23%] w-full h-full absolute " />
       </div>
       <div className="text-center mt-[38vh] sm:my-auto z-20 leading-none">
         <p className="font-SFNSRounded text-[60px] sm:text-[120px]   text-white">
