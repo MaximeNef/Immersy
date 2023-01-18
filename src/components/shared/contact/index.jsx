@@ -11,6 +11,7 @@ const ContactForm = ({ data, setData, textarea, selected }) => {
     if (
       !(data.prenom == null || data.prenom == '') &&
       !(data.nom == null || data.nom == '') &&
+      !(data.email == null) &&
       data.email.match(
         /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
       )
